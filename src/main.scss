@@ -273,8 +273,61 @@ transition: all .3s;
     color: #D5D0CF;
     font-weight: 600;
     font-size: 12px;
+
 }
 
+
+// footer ------------------------------------------------
+footer{
+    font-size: 15px;
+    font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    background: linear-gradient(rgba(218,206,206,0.94), rgba(218,206,206,0.8)), url('https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg');
+    background-position: bottom;
+    padding: 5.75% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 0 40.98px;
+}
+footer .container-fluid{
+    max-width: 1400px;
+    padding: 0 60px;
+}
+.widget-title{
+    color: #3b354d;
+    margin-bottom: 1rem;
+    font-size: .95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.custom-footer-links a{
+    color: #888491;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.custom-footer-links h5{
+    color: #888491;
+    font-size: 15px;
+}
+footer .custom-register-btn{
+    color: #888491;
+    background: #ff6162;
+    width: fit-content;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1.7px;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    border-width: 2px !important;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: .4rem;
+    transition: all 0.2s ease-in-out;
+}
 @media screen and (max-width: 1200px) {
     .custom-profile-container{
         padding: 30px 0;
@@ -287,6 +340,10 @@ transition: all .3s;
         top: 0;
         width: 188px;
         height: 215px;
+    }
+    footer .container-fluid{
+        width: 1148px;
+        padding: 0 27.12px;
     }
 }
 
