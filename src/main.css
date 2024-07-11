@@ -11999,9 +11999,10 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 7px;
+  padding: 0 8.5px;
   color: white;
   font-size: 0.9rem;
+  font-weight: 700 !important;
 }
 
 .custom-links.active {
@@ -12096,8 +12097,9 @@ textarea.form-control-lg {
 }
 
 #community-link-menu li {
-  line-height: 1.5;
+  line-height: 1;
   font-size: 15px;
+  font-weight: 400;
   letter-spacing: 0px;
 }
 
@@ -12249,12 +12251,57 @@ textarea.form-control-lg {
   font-size: 12px;
 }
 
+#bg-banner {
+  background-image: url("https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#join-community {
+  padding: 9%;
+  background: rgba(255, 97, 98, 0.92);
+  font-size: 15px;
+}
+
+#join-community h2, #join-community .h2 {
+  font-size: 35.25px;
+}
+
+#join-community p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#join-community h2, #join-community .h2 {
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+#join-community .custom-register-btn {
+  background: #f0ebeb;
+  width: 256px;
+  font-family: "Poppins";
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  color: rgba(255, 97, 98, 0.9215686275);
+}
+
+#join-community .custom-register-btn:hover {
+  opacity: 0.7;
+}
+
 footer {
   font-size: 15px;
-  font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  background: linear-gradient(rgba(218, 206, 206, 0.94), rgba(218, 206, 206, 0.8)), url("https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg");
-  background-position: bottom;
-  padding: 5.75% 0;
+  font-family: "Montserrat", sans-serif;
+  background: rgba(218, 206, 206, 0.94);
+  padding: 5.75% 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12262,21 +12309,28 @@ footer {
 
 footer .container-fluid, footer .container-sm, footer .container-md, footer .container-lg, footer .container-xl, footer .container-xxl {
   max-width: 1400px;
-  padding: 0 60px;
+  padding: 0 40.8px;
 }
 
 .widget-title {
   color: #3b354d;
   margin-bottom: 1rem;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 700 !important;
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .custom-footer-links a {
   color: #888491;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  display: block;
+}
+
+.custom-footer-links a:hover {
+  transform: translateX(4px);
+  color: #2f2c3c;
 }
 
 .custom-footer-links h5, .custom-footer-links .h5 {
@@ -12305,7 +12359,15 @@ footer .custom-register-btn {
   transition: all 0.2s ease-in-out;
 }
 
+footer .custom-register-btn:hover {
+  color: #2f2c3c;
+  background: #ff6162;
+}
+
 @media screen and (max-width: 1200px) {
+  #community-link-menu {
+    left: -20vh;
+  }
   .custom-profile-container {
     padding: 30px 0;
     height: 384.8px;
@@ -12332,6 +12394,9 @@ footer .custom-register-btn {
     width: 118px;
     height: 39px;
   }
+  #join-community h2, #join-community .h2 {
+    font-size: 27.115px;
+  }
 }
 @media screen and (max-width: 769px) {
   .custom-header-h {
@@ -12341,5 +12406,12 @@ footer .custom-register-btn {
   .custom-header-h img {
     width: 118px;
     height: 39px;
+  }
+  #join-community h2, #join-community .h2 {
+    font-size: 22.3px;
+  }
+  #join-community p {
+    font-size: 0.8rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

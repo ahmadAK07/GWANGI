@@ -3,80 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/fonts/poppins/pxiEyp8kv8JHgFVrJJfedHFHGPc.woff"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/fonts/montserrat/JTURjIg1_i6t8kCHKm45_dJE3gnD-Px3rCs.woff"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLCz7Z1xlE92JQEk.woff"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/plugins/grimlock/assets/fonts/fontawesome-webfont.woff2?v=4.7.0"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/fonts/montserrat/JTURjIg1_i6t8kCHKm45_c5H3gnD-Px3rCs.woff"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/fonts/poppins/pxiByp8kv8JHgFVrLEj6Z1xlE92JQEk.woff"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/fonts/montserrat/JTUSjIg1_i6t8kCHKm459WlhzSTh89Y.woff"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/themes/gwangi/assets/fonts/gwangi/gwangi.woff?foirwg"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/fonts/montserrat/JTURjIg1_i6t8kCHKm45_bZF3gnD-Px3rCs.woff"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      as="font"
-      href="https://community.gwangi-theme.com/wp-content/fonts/poppins/pxiDyp8kv8JHgFVrJJLmy15VF9eIYktMqg.woff"
-      crossorigin
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <header style="display: none;">
+    <header>
       <div class="custom-bg-purple">
         <div class="container-fluid">
           <div class="row custom-header-h custom-bg-purple align-items-center">
@@ -113,7 +50,7 @@
                         class="custom-links text-decoration-none fw-normal"
                         ><span>Home</span>
                         <i
-                          style="font-size: 8px; margin-left: 1px"
+                          style="font-size: 8px; margin-left: 1px;"
                           class="fa-solid fa-chevron-down"
                         ></i
                       ></a>
@@ -395,7 +332,7 @@
       </div>
     </header>
 
-    <main style="display: none;">
+    <main class="border border-danger">
       <div id="profile-header-content">
         <div class="h-100 container-fluid custom-profile-container">
           <div class="h-100 row px-2 align-items-end">
@@ -427,12 +364,21 @@
 
 
 
-      <div style="height: 500px;"></div>
+      <!-- <div style="height: 500px;"></div> -->
+      <div id="bg-banner">
+      <div class="container-fluid" id="join-community">
+           <div class=" mx-auto text-white d-flex flex-column align-items-center justify-content-center gap-2">
+              <h2>Join the Best Community</h2>
+              <p>Subscribe to Gwangi now and find your Life Partner!</p>
+              <a href="/" class="btn custom-register-btn">Register Now for free</a>
+           </div>
+      </div>
+
     <footer class=" ">
           <div class="container-fluid">
-              <div class="row">
+              <div class="row px-0">
                   <div class="col-md-3 px-0">
-                    <h2 class="widget-title mb-4">GWANGI COMMUNITY</h2>
+                    <h2 class="widget-title mb-5">GWANGI COMMUNITY</h2>
                     <ul  class="list-unstyled custom-footer-links d-flex flex-column gap-2">
                       <li><a href="#">Social Wall</a></li>
                       <li><a href="#">Swipe Members</a></li>
@@ -442,7 +388,7 @@
                     </ul>
                   </div>
                   <div class="col-md-3 px-0 ">
-                    <h2 class="widget-title mb-4">GWANGI STORIES</h2>
+                    <h2 class="widget-title mb-5">GWANGI STORIES</h2>
                     <ul  class="list-unstyled custom-footer-links d-flex flex-column gap-2">
                       <li><a href="#">Home</a></li>
                       <li><a href="#">Blog</a></li>
@@ -452,7 +398,7 @@
                     </ul>
                   </div>
                   <div class="col-md-3 px-0 ">
-                    <h2 class="widget-title mb-4">FOLLOW US</h2>
+                    <h2 class="widget-title mb-5">FOLLOW US</h2>
                     <ul  class="list-unstyled custom-footer-links d-flex flex-column gap-2">
                       <li><a href="#" class="d-flex gap-4 align-items-center"><i class="fa-brands fa-instagram"></i> <span>gwangi_community</span></a></li>
                       <li><a href="#" class="d-flex gap-4 align-items-center"><i class="fa-brands fa-twitter"></i> <span>gwangi</span></a></li>
@@ -462,7 +408,7 @@
                     </ul>
                   </div>
                   <div class="col-md-3 px-0 ">
-                    <h2 class="widget-title mb-4">REGISTER TO GWANGI</h2>
+                    <h2 class="widget-title mb-5">REGISTER TO GWANGI</h2>
                     <ul  class="list-unstyled custom-footer-links d-flex flex-column gap-2">
                     <h5>Meet lots of people on Gwangi and Have amazing time!</h5>
 
@@ -472,5 +418,6 @@
               </div>
           </div>
     </footer>
+  </div>
   </body>
 </html>

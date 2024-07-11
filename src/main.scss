@@ -2,6 +2,7 @@ $primary: red;
 $fs-6: .9rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 * {
     padding: 0;
     margin: 0;
@@ -39,9 +40,10 @@ $fs-6: .9rem;
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 7px;
+    padding: 0 8.5px;
     color: white;
     font-size: .9rem;
+    font-weight: 700 !important;
 }
 
 .custom-links.active {
@@ -133,8 +135,9 @@ transition: all .3s;
     color: gray;
 }
 #community-link-menu li{
-    line-height: 1.5;
+    line-height: 1;
     font-size: 15px;
+    font-weight: 400;
     letter-spacing: 0px;
 }
 #community-link-menu .custom-col{
@@ -273,38 +276,83 @@ transition: all .3s;
     color: #D5D0CF;
     font-weight: 600;
     font-size: 12px;
+    
+}
+// -------------------------------
 
+#bg-banner{
+    background-image:  url('https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+//join community ----------------
 
+#join-community {
+    padding: 9%;
+    background: rgba(255, 97, 98, 0.92);
+    font-size: 15px;
+}
+#join-community h2{font-size: 35.25px;}
+#join-community p{font-size: 1.2rem;font-weight: 400;}
+#join-community h2{
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+#join-community .custom-register-btn{
+    background: #f0ebeb;
+    width: 256px;
+    font-family: 'Poppins';
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   text-transform: uppercase;
+   letter-spacing: 1.2px;
+   font-weight: 600;
+   color: #ff6162eb;
+}
+ #join-community .custom-register-btn:hover{
+    opacity: 0.7;
+}
 // footer ------------------------------------------------
 footer{
     font-size: 15px;
-    font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    background: linear-gradient(rgba(218,206,206,0.94), rgba(218,206,206,0.8)), url('https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg');
-    background-position: bottom;
-    padding: 5.75% 0;
+    
+    font-family: "Montserrat", sans-serif;
+    background: rgba(218,206,206,0.94);
+    padding: 5.75% 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    // padding: 0 40.98px;
 }
 footer .container-fluid{
     max-width: 1400px;
-    padding: 0 60px;
+    padding: 0 40.80px;
 }
 .widget-title{
     color: #3b354d;
     margin-bottom: 1rem;
     font-size: .95rem;
-    font-weight: 700;
+    font-weight: 700 !important;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif !important;
 }
 .custom-footer-links a{
     color: #888491;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    display: block;
+    
 }
+.custom-footer-links a:hover{
+    transform: translateX(4px);
+    color: #2f2c3c;
+}
+
+
 .custom-footer-links h5{
     color: #888491;
     font-size: 15px;
@@ -328,7 +376,17 @@ footer .custom-register-btn{
     border-radius: .4rem;
     transition: all 0.2s ease-in-out;
 }
+footer .custom-register-btn:hover{
+    color: #2f2c3c;
+    background: #ff6162;
+}
+
+
+
 @media screen and (max-width: 1200px) {
+    #community-link-menu{
+        left: -20vh;
+    }
     .custom-profile-container{
         padding: 30px 0;
         height: 384.8px;
@@ -357,6 +415,7 @@ footer .custom-register-btn{
         width: 118px;
         height: 39px;
     }
+    #join-community h2{font-size: 27.115px;}
 }
 @media screen and (max-width: 769px) {
     .custom-header-h {
@@ -367,4 +426,6 @@ footer .custom-register-btn{
         width: 118px;
         height: 39px;
     }
+    #join-community h2{font-size: 22.3px;}
+    #join-community p{font-size: .8rem; text-align: center;}
 }
