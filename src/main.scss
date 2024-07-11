@@ -1,0 +1,313 @@
+$primary: red;
+$fs-6: .9rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    ;
+}
+
+.custom-red {
+    color: #ff6162;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.custom-header-h {
+    height: 70.88px;
+ 
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    ;
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+.custom-header-h img {
+    width: 127px;
+    height: 43px;
+}
+
+.custom-links {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 7px;
+    color: white;
+    font-size: .9rem;
+}
+
+.custom-links.active {
+    background: #2f2c3c;
+    color: #ff6162;
+}
+
+.custom-links:hover {
+    background: #2f2c3c;
+}
+
+.custom-links::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background: rgb(233, 14, 14);
+    transition: all .2s;
+}
+
+.custom-links:hover::after {
+    width: 100%;
+}
+#home-link:hover .custom-home-submenu{
+     opacity: 1;
+}
+
+.custom-home-submenu, .custom-pages-link{
+     position: absolute;
+     left: 0;
+     top: 110%;
+     width: 200px;
+     border-radius: 5px;
+     padding: 4px;
+     display: flex;
+     flex-direction: column;
+     gap: 2px;
+     opacity: 0;
+     transition: all .3s;
+}
+.custom-pages-link{
+    bottom: -200px;
+}
+#pages-link-menu:hover .custom-pages-link{
+    opacity: 1;
+}
+.custom-home-submenu a, .custom-pages-link a{
+    width: 100%;
+    padding: 12px 2;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.custom-home-submenu a:hover, .custom-pages-link a:hover{
+    background: white;
+    color: #2f2c3c;
+}
+
+.custom-community-link:hover #community-link-menu{
+    opacity: 1;
+} 
+
+#community-link-menu{
+    position: absolute;
+    left: 0;
+    top: 110%;
+    width: 700px;
+
+    overflow: hidden;
+    border-radius: 5px;
+    padding-bottom: 30px; 
+    background: 
+    linear-gradient(90deg, #2f2c3c 70%, transparent 90%), 
+    url('anthony-delanoix-15928-700x400.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+opacity: 0;
+transition: all .3s;
+
+}
+#community-link-menu h6{
+    font-size: 13px;
+    font-weight: 600;
+    color: gray;
+}
+#community-link-menu li{
+    line-height: 1.5;
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+#community-link-menu .custom-col{
+    // border: 2px solid red;
+    width: 30%;
+    padding: 20px;
+}
+#community-link-menu a{color: white;}
+#community-link-menu a:hover{
+    color: #2f2c3c;
+    background: white;
+}
+.custom-bg-purple {
+    background: #3B354D;
+}
+
+.custom-btn-login {
+    border: 2px solid #ffffff33;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.custom-btn-login:hover {
+    border-color: white;
+    color: white;
+}
+
+#toggler {
+    gap: 4.5px;
+}
+
+#toggler span {
+    height: 3px;
+    width: 28px;
+    border-radius: 20px;
+    display: block;
+    background: white;
+}
+
+#toggler span:nth-child(3) {
+    width: 20px;
+}
+
+.custom-sub-menu{
+   padding: 0 30px;
+
+}
+
+.custom-sub-menu-links.main{
+    font-weight: 700;
+    margin: 10px 0;
+}
+.custom-sub-menu-links{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    width: 100%;
+}
+
+.custom-scroller{
+    max-height: 95vh;
+    overflow-y: scroll;
+}
+/* Webkit-based browsers */
+.custom-scroller::-webkit-scrollbar {
+    width: 30px;
+    height: 12px;
+}
+
+.custom-scroller::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scroller::-webkit-scrollbar-thumb {
+    background: #2f2c3c;
+    border-radius: 40px;
+    width: 30px;
+}
+
+.custom-scroller::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Firefox */
+.custom-scroller {
+    scrollbar-width: auto;
+    scrollbar-color: #2f2c3c transparent;
+}
+
+
+// end of nav bar
+
+#profile-header-content{
+    height: 384.91px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('./10-bp-cover-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 66.66px;
+}
+.custom-profile-container{
+    max-width: 1310px;
+    min-width: auto;
+}
+.profile-info{
+    // border: 2px solid yellow;
+    height: 185px;
+}
+.custom-profile-pic{
+    border: 10px;
+    width: 252.8px;
+    height: 288.91px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+.custom-profile-pic-container{
+    height: 185px;
+}
+.custom-profile-badge{
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent white */
+    border-radius: 5px; /* Rounded corners */
+    backdrop-filter: blur(15px); /* Blur the background behind */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    padding: 8px; /* Optional: add some padding */
+    color: #D5D0CF;
+    font-weight: 600;
+    font-size: .8em;
+    width: fit-content;
+}
+.user-name-small{
+    color: #D5D0CF;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+    .custom-profile-container{
+        padding: 30px 0;
+        height: 384.8px;
+    }   
+#profile-header-content{
+    height: 384.8px;
+}
+    .custom-profile-pic{
+        top: 0;
+        width: 188px;
+        height: 215px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .custom-header-h {
+        height: 62.86px;
+        padding: 6.75px 15px;
+    }
+    .custom-header-h img {
+        width: 118px;
+        height: 39px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .custom-header-h {
+        height: 62.86px;
+        padding: 6.75px 15px;
+    }
+    .custom-header-h img {
+        width: 118px;
+        height: 39px;
+    }
+}
