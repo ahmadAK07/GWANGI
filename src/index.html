@@ -14,18 +14,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
 
-  <body>
+  <body style="overflow-x: hidden;">
     <header>
-      <div class="custom-bg-purple">
+      <div class="custom-bg-purple" style="position: fixed; top: 0; left: 0; width: 100vw;z-index: 999;">
         <div class="container-fluid">
-          <div class="row custom-header-h custom-bg-purple align-items-center">
+          <div class="row custom-header-h align-items-center">
             <!-- logo -->
             <div class="col-2 h-100 d-flex align-items-center px-0">
               <a href="">
@@ -38,9 +38,9 @@
 
             <!-- nav links -->
             <div
-              class="d-lg-none d-block ms-auto col-1 d-flex align-items-center justify-content-end px-0"
+              class="col-1 d-lg-none d-block ms-auto  d-flex align-items-center justify-content-end px-0"
             >
-              <button id="toggler" class="d-flex flex-column btn p-0">
+              <button id="nav-toggler" class="d-flex flex-column btn p-0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -219,8 +219,10 @@
             </div>
           </div>
         </div>
-        <div id="sub-menu" class="d-none custom-sub-menu col-12 px-3">
-          <div class="custom-scroller">
+
+        <!-- Menu for screen lesser than 769 -->
+        <div id="sub-menu"  class="custom-sub-menu col-12 px-3 h-0">
+          <div class="custom-menu-scroller">
             <button
               style="width: 100%; height: 40px"
               class="btn custom-btn-login"
@@ -339,36 +341,109 @@
           </div>
         </div>
       </div>
+
+
+     
+
+
     </header>
 
-    <main class="border border-danger">
-      <div id="profile-header-content">
-        <div class="h-100 container-fluid custom-profile-container">
-          <div class="h-100 row px-2 align-items-end">
-            <div
-              class="custom-profile-pic-container col-2 border-danger position-relative"
-            >
-              <img
-                src="./13-bpfull.jpg"
-                class="rounded custom-profile-pic"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-6 py-5 d-flex flex-column gap-2 ms-5 ps-5 profile-info"
-            >
-              <div>
-                <span class="user-name-small">@elia</span>
-                <h3 class="text-white fs-4 fw-bold">Elisio Street</h3>
+
+
+    <main>
+      <div style="height: 77px;">
+
+      </div>
+  
+
+
+      <div id="profile-content_nav" class="">
+        <div style="padding: 0 28px" class="d-flex  justify-content-between align-items-center "><button id="profile-nav-toggler" class="pb-3 profile-content-nav-toggler"><span>Menu</span> <span><i class="fa-solid fa-angle-down"></i></span></button> </div>
+          <div class="container  p-0">
+            <div class="row justify-content-center p-0 ">
+              <div class="col-xl-7 col-12  px-0 py-0" >
+                   <ul  class=" m-0 ps-xl-5 p-0 d-flex flex-column flex-md-row align-items-center gap-md-2 list-unstyled ">
+                    <li  class="">  <a  href="/">Activity</a> </li>
+                    <li > <a href="/">Profile</a> </li>
+                    <li > <a href="/">Friends <span>0</span> </a> </li>
+                    <li > <a href="/">Groups <span>1</span></a> </li>
+                    <li > <a href="/">Forums</a> </li>
+                    <li > <a href="/">Media <span>0</span></a> </li>
+                   </ul >
               </div>
-              <div class="fw-bold text-white fs-6">
-                41 &nbsp;&nbsp; San Jose
-              </div>
-              <span class="custom-profile-badge">4 Years Ago</span>
             </div>
           </div>
+      </div>
+
+
+      <div id="profile-body">
+        <div  class="profile-body-container container ">
+         <div class="mb-2">
+         <div class="row">
+          <div class="col-md-12 col-lg-9">
+            <ul id="profile-sub-nav" class=" d-flex flex-column flex-md-row list-unstyled bg-white">
+              <li> <a href="/" class="d-flex align-items-center active"><i class="fa-solid fa-user"></i> Personal</a> </li>
+              <li> <a href="/" class="d-flex align-items-center "><i class="fa-solid fa-at"></i> <span>Mentions</span></a> </li>
+              <li> <a href="/" class="d-flex align-items-center "><i class="fa-solid fa-star"></i> <span>Favorites</span></a> </li>
+              <li> <a href="/" class="d-flex align-items-center "><i class="fa-solid fa-face-smile"></i> <span>Friends</span></a> </li>
+              <li> <a href="/" class="d-flex align-items-center "><i class="fa-solid fa-user-group"></i> <span>Groups</span></a> </li>
+          </ul>
+          <div class="activity-filer d-flex justify-content-md-end justify-content-start align-items-center position-relative">
+            <select id="activity-filter-by" style="width: 152px;">
+              <option value="-1">— Everything —- </option>
+              <option value="activity_update">Updates</option>
+              <option value="rtmedia_update">Media Updates</option>
+              <option value="new_blog">New Sites</option>
+              <option value="new_blog_post">Posts</option>
+              <option value="new_blog_comment">Comments</option>
+              <option value="friendship_accepted,friendship_created">Friendships</option>
+              <option value="created_group">New Groups</option>
+              <option value="joined_group">Group Memberships</option>
+              <option value="bbp_topic_create">Topics</option>
+              <option value="bbp_reply_create">Replies</option>
+            </select>
+            <div class="position-absolute"></div>
+          </div>
+
+          <div class="activity-container pt-2 w-100 d-flex flex-column align-items-end position-relative" >
+              
+            <div class="position-absolute activity-design hidden d-none d-md-block">
+                <i class="fa-solid fa-rotate" style="top: 20px;"></i>
+                <i class="fa-solid fa-rotate" style="top: 120px;"></i>
+                    <span style="top:20px;"></span>
+                    <span style="top:120px;"></span>
+
+               </div>
+            
+               <div class="bg-white activity d-flex align-items-center">
+                     <img src="./13-bpfull.jpg" height="87%" alt="">
+                     <div class=" h-100 d-flex flex-column justify-content-center ps-2">
+                         <p class="m-0"><a href="" class="text-dark text-decoration-none">Elisio Street</a>'s profile was updated</p>
+                         <span class="">5 Years Ago</span>
+                     </div>
+                </div>
+                 <div class="bg-white activity d-flex align-items-center">
+                     <img src="./13-bpfull.jpg" height="87%" alt="">
+                     <div class=" h-100 d-flex flex-column justify-content-center ps-2">
+                         <p class="m-0"><a href="" class="text-dark text-decoration-none">Elisio Street</a>'s profile was updated</p>
+                         <span class="">5 Years Ago</span>
+                     </div>
+                </div>
+                <button class="activity-btn">
+                  LOAD MORE
+                </button>
+             
+            </div>
+
+          </div>
+         </div>
+       
+         </div>
         </div>
       </div>
+
+
+
     </main>
 
  
@@ -384,6 +459,7 @@
       </div>
 
       <footer class=" ">
+       <div class="footer">
         <div class="container-fluid">
           <div class="row px-0">
             <div class="col-md-3 px-0">
@@ -453,12 +529,18 @@
               >
                 <h5>Meet lots of people on Gwangi and Have amazing time!</h5>
 
-                <a href="/" class="btn custom-register-btn">Register Now</a>
+                <a href="/" class="btn custom-register-btn button">Register Now</a>
               </ul>
             </div>
           </div>
         </div>
+       </div>
+        <div class="footer-bottom  d-flex align-items-center justify-content-center">
+          © 2024 GWANGI. All rights reserved.
+        </div>
       </footer>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
