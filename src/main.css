@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -12254,22 +12255,37 @@ textarea.form-control-lg {
   align-items: flex-end;
   justify-content: center;
   border: 2px solid yellow;
+  padding: 30px 0;
 }
 
-.custom-profile-container {
-  max-width: 1310.05px;
+#profile-header-content .profile-header-container {
+  max-width: 1400px;
+  width: 100%;
+  padding-left: clamp(25px, 3vw, 60px);
+  padding-right: clamp(25px, 3vw, 60px);
+  height: 95%;
+  border: 2px solid brown;
 }
 
-.custom-profile-container .row {
-  min-height: 55vh;
+.profile-header-avatar {
+  max-width: 320px;
+  width: 23%;
 }
 
-.custom-profile-pic {
-  transform: translateY(40%);
-  border-radius: 5px;
-  width: 80%;
-  display: block;
-  margin-left: auto;
+#profile-header-content img {
+  width: 100%;
+  transform: translate(0, 45%);
+  border-radius: 0.4rem;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+}
+
+.profile-info {
+  height: 50%;
+}
+
+.profile-info h3, .profile-info .h3, .profile-info p {
+  font-family: "Montserrat";
+  font-weight: 700;
 }
 
 .custom-profile-badge {
@@ -12283,11 +12299,13 @@ textarea.form-control-lg {
   font-size: 0.8em;
   width: -moz-fit-content;
   width: fit-content;
+  display: block;
+  margin-top: 20px;
 }
 
 .user-name-small {
   color: #d5d0cf;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
 }
 
@@ -12298,6 +12316,7 @@ textarea.form-control-lg {
 #profile-content_nav a {
   position: relative;
   font-family: "Montserrat";
+  font-weight: 700;
   display: block;
   padding: 27px 13px;
   color: black;
@@ -12307,6 +12326,7 @@ textarea.form-control-lg {
 #profile-content_nav a span {
   position: absolute;
   display: flex;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   height: 33px;
@@ -12524,7 +12544,7 @@ textarea.form-control-lg {
   font-size: 85%;
   transition: all 0.2s ease-in-out;
   color: #888491;
-  opacity: 0.8;
+  opacity: 0.7;
   font-family: "Montserrat";
 }
 
@@ -12661,6 +12681,7 @@ footer .footer-bottom {
   background-color: #cfbfbf;
   color: #8b868d;
   font-size: 15px;
+  font-family: "Poppins";
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0px;
