@@ -1,7 +1,10 @@
-
 $fs-6: 0.9rem;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "../node_modules/bootstrap/scss/bootstrap";
+@font-face {
+  font-family: "gwangi";
+  src: url("../fonts/gwangi\ \(1\).ttf");
+}
 .h-95vh {
   height: 95vh;
 }
@@ -41,7 +44,7 @@ $fs-6: 0.9rem;
   height: 43px;
 }
 
-.custom-links {
+a.custom-links {
   position: relative;
   display: flex;
   gap: 5px;
@@ -261,7 +264,7 @@ button.custom-btn-login:hover {
 }
 
 // end of nav bar --------------------------------------
-#header-bg-image{
+#header-bg-image {
   background-image: url("./10-bp-cover-image.jpg");
   background-size: 130%;
   background-position: bottom center;
@@ -271,23 +274,23 @@ button.custom-btn-login:hover {
   z-index: 1;
   margin-top: 70px !important;
   font-size: 15px;
-  background-color: rgba(47, 44, 60, .7);
+  background-color: rgba(47, 44, 60, 0.7);
 }
-.user-nicename-small{
+.user-nicename-small {
   font-size: 50%;
   font-weight: 400;
   font-family: "Montserrat";
 }
-.user-nicename, .bp-member-xprofile-custom-fields>*{
+.user-nicename,
+.bp-member-xprofile-custom-fields > * {
   font-family: "Montserrat";
   font-weight: 700;
 }
-.bp-member-xprofile-custom-fields>*{
+.bp-member-xprofile-custom-fields > * {
   font-size: 14.5px;
 }
 // -------------------------------
 // profile-content-nav
-
 
 #profile-content_nav {
   font-size: 15px;
@@ -337,7 +340,7 @@ button.custom-btn-login:hover {
 #profile-content_nav a:hover::after {
   width: 100%;
 }
-.profile-content-nav-toggler{
+.profile-content-nav-toggler {
   display: none;
 }
 
@@ -540,9 +543,28 @@ button.custom-btn-login:hover {
 #join-community h2 {
   font-size: 35.25px;
   position: relative;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  background: transparent;
+}
+#join-community h2::after {
+  background: none !important;
+  content: "\e943";
+  font-family: "gwangi";
+  color: rgba(0, 0, 0, 0.7);
+  color: white !important;
+  height: auto;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  z-index: 1;
+  font-size: 0.8em;
+  opacity: 0.4;
 }
 #join-community p {
   font-size: 1.2rem;
+  font-family: "Poppins";
   font-weight: 400;
 }
 #join-community h2 {
@@ -561,7 +583,8 @@ button.custom-btn-login:hover {
   letter-spacing: 1.2px;
   font-weight: 500;
   color: #ff6162eb;
-  font-size: .9em;
+  font-size: 0.9em;
+  transition: all 0.3s;
 }
 #join-community .custom-register-btn:hover {
   opacity: 0.7;
@@ -594,6 +617,9 @@ footer .container-fluid {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   display: block;
+  font-family: "Poppins";
+  font-size: 1em;
+  font-size: 400;
 }
 .custom-footer-links a:not(.button):hover {
   transform: translateX(4px);
@@ -677,12 +703,11 @@ footer .footer-bottom {
   #join-community h2 {
     font-size: 27.115px;
   }
-  #header-bg-image{
+  #header-bg-image {
     margin-top: -7.4px;
   }
 }
 @media screen and (max-width: 769px) {
-  
   .custom-header-h {
     height: 62.86px;
     padding: 6.75px 15px;
@@ -692,7 +717,7 @@ footer .footer-bottom {
     height: 39px;
   }
   #join-community h2 {
-    font-size: calc( (2.35rem) / 1.3);
+    font-size: calc((2.35rem) / 1.3);
   }
   #join-community p {
     font-size: 0.8rem;
@@ -723,36 +748,35 @@ footer .footer-bottom {
   #profile-content_nav {
     overflow: hidden;
   }
-  #profile-content_nav ul{
+  #profile-content_nav ul {
     width: 100%;
-    
   }
   #profile-content_nav a {
-   width: 100%;
-   padding: 2px 0px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    width: 100%;
+    padding: 2px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  #profile-content_nav a::after{
+  #profile-content_nav a::after {
     display: none;
   }
-  #profile-content_nav li{
+  #profile-content_nav li {
     width: 100%;
     margin: 2px 0;
   }
-  #profile-content_nav a span{
+  #profile-content_nav a span {
     display: flex;
-     position:  relative !important;
-     left: unset !important;     
-     right: 20px;
-     bottom: 0 !important;
-     width: 25px;
-     height: 25px;
-     font-size: 10px;
-     border-width: 3px !important;
+    position: relative !important;
+    left: unset !important;
+    right: 20px;
+    bottom: 0 !important;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    border-width: 3px !important;
   }
-  .profile-content-nav-toggler{
+  .profile-content-nav-toggler {
     background: transparent;
     border: none;
     width: 100%;
@@ -762,36 +786,36 @@ footer .footer-bottom {
     position: relative;
     margin-bottom: 10px;
   }
-  .profile-content-nav-toggler::after{
-      position: absolute;
-      content: "";
-      display: block;
-      height: 2px;
-      width: 0%;
-      left: 0;
-      bottom: 0;
-      background: rgb(233, 14, 14);
-      transition: all 0.2s;
+  .profile-content-nav-toggler::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background: rgb(233, 14, 14);
+    transition: all 0.2s;
   }
-  .profile-content-nav-toggler:hover{
+  .profile-content-nav-toggler:hover {
     color: #ff6162;
   }
-  .profile-content-nav-toggler:hover::after{
+  .profile-content-nav-toggler:hover::after {
     width: 100%;
   }
-  #profile-content_nav ul{
+  #profile-content_nav ul {
     height: 0;
     overflow-y: hidden;
-    transition: all .3s;
+    transition: all 0.3s;
   }
-  #profile-content_nav .links{
+  #profile-content_nav .links {
     height: 200.9px;
   }
 }
 @media screen and (max-width: 576px) {
-  #profile-content_nav li{
+  #profile-content_nav li {
     width: 90%;
-  } 
+  }
   #join-community h2 {
     font-size: 6vw;
   }

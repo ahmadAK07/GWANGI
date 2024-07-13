@@ -11966,6 +11966,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "gwangi";
+  src: url("../fonts/gwangi (1).ttf");
+}
 .h-95vh {
   height: 95vh;
 }
@@ -12005,7 +12009,7 @@ textarea.form-control-lg {
   height: 43px;
 }
 
-.custom-links {
+a.custom-links {
   position: relative;
   display: flex;
   gap: 5px;
@@ -12259,7 +12263,8 @@ button.custom-btn-login:hover {
   font-family: "Montserrat";
 }
 
-.user-nicename, .bp-member-xprofile-custom-fields > * {
+.user-nicename,
+.bp-member-xprofile-custom-fields > * {
   font-family: "Montserrat";
   font-weight: 700;
 }
@@ -12536,10 +12541,30 @@ button.custom-btn-login:hover {
 #join-community h2, #join-community .h2 {
   font-size: 35.25px;
   position: relative;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  background: transparent;
+}
+
+#join-community h2::after, #join-community .h2::after {
+  background: none !important;
+  content: "\e943";
+  font-family: "gwangi";
+  color: rgba(0, 0, 0, 0.7);
+  color: white !important;
+  height: auto;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  z-index: 1;
+  font-size: 0.8em;
+  opacity: 0.4;
 }
 
 #join-community p {
   font-size: 1.2rem;
+  font-family: "Poppins";
   font-weight: 400;
 }
 
@@ -12561,6 +12586,7 @@ button.custom-btn-login:hover {
   font-weight: 500;
   color: rgba(255, 97, 98, 0.9215686275);
   font-size: 0.9em;
+  transition: all 0.3s;
 }
 
 #join-community .custom-register-btn:hover {
@@ -12596,6 +12622,9 @@ footer .container-fluid, footer .container-sm, footer .container-md, footer .con
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   display: block;
+  font-family: "Poppins";
+  font-size: 1em;
+  font-size: 400;
 }
 
 .custom-footer-links a:not(.button):hover {
