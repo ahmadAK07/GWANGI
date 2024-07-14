@@ -32,7 +32,7 @@ $fs-6: 0.9rem;
 }
 
 .custom-header-h {
-  height: 70.88px;
+  height: 75.6px;
   font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
@@ -278,7 +278,7 @@ button.custom-btn-login:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 70.88px;
+  margin-top: 75.6px;
   position: relative;
 }
 #header-bg-image::after{
@@ -394,6 +394,7 @@ button.custom-btn-login:hover {
   border-radius: 0.4rem;
   padding: 3px;
   gap: 6px;
+  margin-left: 10px;
 }
 #profile-sub-nav a > span {
   font-family: "Montserrat";
@@ -754,7 +755,7 @@ footer .footer-bottom {
 
 @media screen and (max-width: 991px) {
   .custom-header-h {
-    height: 62.86px;
+    height: 64.36px;
     padding: 6.75px 15px;
   }
   .custom-header-h img {
@@ -771,7 +772,7 @@ footer .footer-bottom {
 }
 @media screen and (max-width: 769px) {
   .custom-header-h {
-    height: 62.86px;
+    height: 64.36px;
     padding: 6.75px 15px;
   }
   .custom-header-h img {
@@ -808,6 +809,7 @@ footer .footer-bottom {
     border-radius: 0.4rem;
     padding: 11.5px 7.5px;
     gap: 6px;
+   
   }
   #profile-sub-nav a{
     padding: 7.5px 10.50px;
