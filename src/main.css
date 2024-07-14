@@ -12486,6 +12486,15 @@ button.custom-btn-login:hover {
   color: #888491;
 }
 
+/* Change color of both span and i when span is hovered */
+i.fa-rotate:hover {
+  color: #ff6162;
+}
+
+.activity-container > .activity-design > span:hover {
+  background: #ff6162;
+}
+
 .activity-container .activity {
   height: 78.81px;
   width: 93%;
@@ -12498,7 +12507,7 @@ button.custom-btn-login:hover {
   border-radius: 10px;
 }
 
-.activity-container .activity a:hover {
+.activity-container .activity a:hover, .activity-container .activity span:hover {
   color: #ff6162 !important;
 }
 
@@ -12720,6 +12729,9 @@ footer .footer-bottom {
   footer .container-fluid, footer .container-sm, footer .container-md, footer .container-lg, footer .container-xl, footer .container-xxl {
     width: 1148px;
     padding: 0 27.12px;
+  }
+  .activity-container .activity-design i {
+    left: -1px;
   }
 }
 @media screen and (max-width: 991px) {

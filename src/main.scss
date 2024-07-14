@@ -494,6 +494,13 @@ button.custom-btn-login:hover {
   opacity: 0.5;
   color: #888491;
 }
+/* Change color of both span and i when span is hovered */
+i.fa-rotate:hover{
+  color: #ff6162;
+}
+.activity-container>.activity-design>span:hover{
+  background: #ff6162;
+}
 .activity-container .activity {
   height: 78.81px;
   width: 93%;
@@ -505,7 +512,7 @@ button.custom-btn-login:hover {
   transform: translate(-23%, -23%);
   border-radius: 10px;
 }
-.activity-container .activity a:hover {
+.activity-container .activity a:hover, .activity-container .activity span:hover {
   color: #ff6162 !important;
 }
 .activity-container .activity p {
@@ -714,6 +721,9 @@ footer .footer-bottom {
     width: 1148px;
     padding: 0 27.12px;
   }
+  .activity-container .activity-design i {
+    left: -1px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -731,6 +741,7 @@ footer .footer-bottom {
   #header-bg-image {
     margin-top: -7.4px;
   }
+  
 }
 @media screen and (max-width: 769px) {
   .custom-header-h {
