@@ -1,6 +1,6 @@
 $fs-6: 0.9rem;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 .h-95vh {
   height: 95vh;
@@ -11,8 +11,8 @@ $fs-6: 0.9rem;
 .bg-pink {
   background-color: #ff6162;
 }
-#nav-logo:hover{
-    opacity: 0.8;
+#nav-logo:hover {
+  opacity: 0.8;
 }
 * {
   padding: 0;
@@ -101,7 +101,7 @@ div#custom-pages-links {
   display: none;
   opacity: 0;
   transition: opacity 0.3s;
-  background:#2f2c3c;
+  background: #2f2c3c;
   height: fit-content;
 }
 #custom-pages-links {
@@ -115,12 +115,12 @@ div#custom-pages-links {
 div#custom-home-submenu a,
 div#custom-pages-links a {
   width: 100%;
-  font-size: .95em;
+  font-size: 0.95em;
   border-radius: 5px;
   text-decoration: none;
   color: white;
   padding: 6px 2px !important;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 #custom-home-submenu a:hover,
 #custom-pages-links a:hover {
@@ -144,7 +144,7 @@ div#custom-pages-links a {
   border-radius: 5px;
   // padding-bottom: 30px;
   background: linear-gradient(90deg, #2f2c3c 70%, transparent 90%),
-    url("anthony-delanoix-15928-700x400.jpg");
+    url("../Images/anthony-delanoix-15928-700x400.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -159,7 +159,7 @@ div#custom-pages-links a {
 }
 #community-link-menu li {
   line-height: 1;
-  font-size: .95em;
+  font-size: 0.95em;
   font-weight: 400;
   letter-spacing: 0px;
 }
@@ -170,7 +170,7 @@ div#custom-pages-links a {
 }
 #community-link-menu a {
   color: white;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 #community-link-menu a:hover {
   color: #2f2c3c;
@@ -184,7 +184,7 @@ button.custom-btn-login {
   border: 2px solid #ffffff33;
   background-color: transparent;
   color: white;
-  padding: .1rem 1rem;
+  padding: 0.1rem 1rem;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -273,29 +273,28 @@ button.custom-btn-login:hover {
 
 // end of nav bar --------------------------------------
 #header-bg-image {
- 
-  background-image: url("./10-bp-cover-image.jpg");
+  background-image: url("../Images/10-bp-cover-image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 75.6px;
   position: relative;
 }
-#header-bg-image::after{
+#header-bg-image::after {
   position: absolute;
   content: "";
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(47, 44, 60, .6);
+  background-color: rgba(47, 44, 60, 0.6);
 }
 #item-header {
   z-index: 1;
   margin-top: 70px !important;
   font-size: 15px;
   // background-color: rgba(47, 44, 60, 0.7);
-  // background-color: rgba(255, 97, 98, .1) 
+  // background-color: rgba(255, 97, 98, .1)
 }
 .user-nicename-small {
   font-size: 50%;
@@ -355,11 +354,11 @@ button.custom-btn-login:hover {
   font-weight: 700;
   font-size: 0.9em;
 }
-#profile-content_nav a.active::after{
+#profile-content_nav a.active::after {
   width: 100%;
   color: #ff6162;
 }
-#profile-content_nav a.active{
+#profile-content_nav a.active {
   color: #ff6162;
 }
 #profile-content_nav a:hover {
@@ -378,7 +377,6 @@ button.custom-btn-login:hover {
   background: #f0ebeb;
 }
 .profile-body-container {
-
   max-width: 1400px !important;
   padding-left: clamp(25px, 3vw, 60px) !important;
   padding-right: clamp(25px, 3vw, 60px) !important;
@@ -387,7 +385,6 @@ button.custom-btn-login:hover {
   width: 95% !important;
   padding-top: 5rem;
   padding-bottom: 2rem;
-  
 }
 #profile-sub-nav {
   width: fit-content;
@@ -399,11 +396,10 @@ button.custom-btn-login:hover {
 #profile-sub-nav a > span {
   font-family: "Montserrat";
   font-weight: 700;
- 
 }
 #profile-sub-nav a > i {
   font-size: 12px;
-  opacity: .5;
+  opacity: 0.5;
 }
 #profile-sub-nav a {
   padding: 7.5px 10.5px;
@@ -475,12 +471,11 @@ button.custom-btn-login:hover {
   color: #888491;
   font-family: "gwangi";
   font-size: 1em;
-  opacity: .5;
+  opacity: 0.5;
   font-weight: 700;
 }
 .activity-container {
   overflow: hidden;
-
 }
 .activity-container .activity-design {
   width: 7%;
@@ -518,11 +513,11 @@ button.custom-btn-login:hover {
   opacity: 0.5;
   color: #888491;
 }
-/* Change color of both span and i when span is hovered */
-i.fa-rotate:hover{
+
+i.fa-rotate:hover {
   color: #ff6162;
 }
-.activity-container>.activity-design>span:hover{
+.activity-container > .activity-design > span:hover {
   background: #ff6162;
 }
 .activity-container .profile-activity {
@@ -536,9 +531,10 @@ i.fa-rotate:hover{
 .activity-container .profile-activity img {
   transform: translate(-23%, -23%);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-.activity-container .profile-activity a:hover, .activity-container .profile-activity span:hover {
+.activity-container .profile-activity a:hover,
+.activity-container .profile-activity span:hover {
   color: #ff6162 !important;
 }
 .activity-container .profile-activity p {
@@ -569,7 +565,7 @@ i.fa-rotate:hover{
 }
 
 #profile-bg-banner {
-  background-image: url("./anthony-delanoix-15928-700x400.jpg");
+  background-image: url("../Images/anthony-delanoix-15928-700x400.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -632,13 +628,12 @@ i.fa-rotate:hover{
   opacity: 0.7;
 }
 // footer ------------------------------------------------
-footer{
+footer {
   background-image: url("https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
 }
 .footer {
   font-size: 15px;
@@ -673,7 +668,7 @@ footer .container-fluid {
   font-size: 400;
   word-wrap: break-word;
 }
-footer .col-md-3:not(.first){
+footer .col-md-3:not(.first) {
   padding-left: 13px !important;
 }
 .custom-footer-links a:not(.button):hover {
@@ -686,7 +681,7 @@ footer .col-md-3:not(.first){
   font-size: 15px;
   font-weight: 400;
 }
-footer .footer ul{
+footer .footer ul {
   margin-bottom: 4px;
 }
 footer .custom-register-btn {
@@ -768,7 +763,6 @@ footer .footer-bottom {
   #header-bg-image {
     margin-top: -7.4px;
   }
-  
 }
 @media screen and (max-width: 769px) {
   .custom-header-h {
@@ -779,7 +773,7 @@ footer .footer-bottom {
     width: 118px;
     height: 39px;
   }
-  .profile-body-container{
+  .profile-body-container {
     padding-left: 25px;
     padding-right: 25px;
     margin-left: auto !important;
@@ -809,29 +803,28 @@ footer .footer-bottom {
     border-radius: 0.4rem;
     padding: 11.5px 7.5px;
     gap: 6px;
-   
   }
-  #profile-sub-nav a{
-    padding: 7.5px 10.50px;
+  #profile-sub-nav a {
+    padding: 7.5px 10.5px;
     gap: 12px;
   }
   .profile-body-container {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  #profile-content_nav .container{
-     max-width: 100%  !important;
-     padding: 0 25px !important;
+  #profile-content_nav .container {
+    max-width: 100% !important;
+    padding: 0 25px !important;
   }
   #profile-content_nav ul {
     width: 100%;
-    padding:  0px 25px !important;
-    transition: all .3s;
+    padding: 0px 25px !important;
+    transition: all 0.3s;
     height: 190.5px;
   }
-  #profile-content_nav ul.h-zero{
+  #profile-content_nav ul.h-zero {
     height: 0;
-  } 
+  }
   #profile-content_nav a {
     width: 100%;
     padding: 2px 0px;
@@ -857,12 +850,11 @@ footer .footer-bottom {
     font-size: 10px;
     border-width: 3px !important;
   }
-  .profile-content-nav-toggler span{
+  .profile-content-nav-toggler span {
     font-weight: 700;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     letter-spacing: 2px;
-
-  }  
+  }
   .profile-content-nav-toggler {
     background: transparent;
     border: none;
@@ -890,16 +882,16 @@ footer .footer-bottom {
   .profile-content-nav-toggler:hover::after {
     width: 100%;
   }
-  #profile-content_nav .container{
+  #profile-content_nav .container {
     overflow: hidden;
   }
   #profile-content_nav ul {
-     padding: 16px 30px;
+    padding: 16px 30px;
   }
   #profile-content_nav .links {
     height: 200.9px;
   }
-  footer .col-md-3:not(.first){
+  footer .col-md-3:not(.first) {
     padding-top: 30px;
   }
 }

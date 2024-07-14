@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 body {
   font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -123,7 +123,7 @@ div#item-header .profile-header__avatar {
     max-width: 320px;
     width: 23%;
   }
-  #item-header .profile-header__avatar img.avatar{
+  #item-header .profile-header__avatar img.avatar {
     transform: translateY(132px);
   }
 }
@@ -142,15 +142,15 @@ div#item-header .profile-header__avatar {
   width: 100%;
   // max-width: 100%;
 }
-#item-header .item-sumary{
+#item-header .item-sumary {
   text-align: left;
 }
 @media (max-width: 767.98px) {
   #item-header .profile-header__avatar {
     padding: 0;
   }
-  #item-header .item-sumary{
-      text-align: center;
+  #item-header .item-sumary {
+    text-align: center;
   }
 }
 @media (max-width: 991.98px) {
@@ -160,8 +160,6 @@ div#item-header .profile-header__avatar {
     margin-right: auto;
   }
 }
-
-
 
 @media (max-width: 767.98px) {
   #item-header .profile-header__avatar img.avatar {
@@ -178,14 +176,13 @@ div#item-header .profile-header__avatar {
   opacity: 1 !important;
   background-color: #3d404a;
   width: 100%;
-  
+
   height: auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   border-radius: 0.4rem;
-
 }
 #item-header img.avatar {
   float: left;
@@ -209,19 +206,18 @@ div#item-header .profile-header__avatar {
 }
 @media (min-width: 768px) {
   .col-md {
-      flex: 1 0 0%;
+    flex: 1 0 0%;
   }
 }
 @media (min-width: 992px) {
- #item-header .profile-header__body {
-      padding-right: 250px !important;
+  #item-header .profile-header__body {
+    padding-right: 250px !important;
   }
 }
 @media (min-width: 768px) {
- #item-header .profile-header__body {
-      padding-right: 150px !important;
+  #item-header .profile-header__body {
+    padding-right: 150px !important;
   }
-
 }
 
 #item-header .profile-header__body {
@@ -237,42 +233,52 @@ div#item-header .profile-header__avatar {
   padding-top: 10px;
 }
 
-#item-header .profile-header__body .user-nicename, #item-header .profile-header__body .item-activity {
+#item-header .profile-header__body .user-nicename,
+#item-header .profile-header__body .item-activity {
   font-size: 1.5em;
 }
 
 #item-header h2 {
   margin-bottom: 5px;
 }
- #item-header h2 {
+#item-header h2 {
   line-height: 1.2;
   margin: 0 0 15px;
 }
 
 #item-header .profile-header__body .bp-member-xprofile-custom-fields {
-  padding: .2rem 0 0 0;
-  font-size: .95em;
+  padding: 0.2rem 0 0 0;
+  font-size: 0.95em;
 }
 
-#item-header .bp-member-xprofile-custom-fields div.bp-member-xprofile-custom-field {
+#item-header
+  .bp-member-xprofile-custom-fields
+  div.bp-member-xprofile-custom-field {
   display: inline-block;
   vertical-align: middle;
   font-style: normal;
 }
-#item-header .profile-header__body .bp-member-xprofile-custom-fields div.bp-member-xprofile-custom-field+div.bp-member-xprofile-custom-field:before {
-  margin-left: .70rem;
-  margin-right: .70rem;
+#item-header
+  .profile-header__body
+  .bp-member-xprofile-custom-fields
+  div.bp-member-xprofile-custom-field
+  + div.bp-member-xprofile-custom-field:before {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
   position: relative;
   top: 1px;
 }
-#item-header .bp-member-xprofile-custom-fields div.bp-member-xprofile-custom-field+div.bp-member-xprofile-custom-field:before {
+#item-header
+  .bp-member-xprofile-custom-fields
+  div.bp-member-xprofile-custom-field
+  + div.bp-member-xprofile-custom-field:before {
   content: "\2022";
   margin-left: 3px;
   margin-right: 3px;
-  opacity: .5;
+  opacity: 0.5;
   display: inline-block;
   vertical-align: middle;
-  font-size: .7em;
+  font-size: 0.7em;
 }
 // #item-header .profile-header__body .item-activity {
 //   float: left;
@@ -281,13 +287,13 @@ div#item-header .profile-header__avatar {
 #item-header .profile-header__body .item-activity {
   display: inline-block;
   position: relative;
-  opacity: .8;
+  opacity: 0.8;
   margin-top: 1rem;
   font-weight: 400;
-  font-size: .8em;
-  background: rgba(0,0,0,.15);
+  font-size: 0.8em;
+  background: rgba(0, 0, 0, 0.15);
   padding: 10px;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   overflow: hidden;
   pointer-events: none;
   max-width: 500px;
