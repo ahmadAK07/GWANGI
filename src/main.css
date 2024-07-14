@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11966,10 +11965,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@font-face {
-  font-family: "gwangi";
-  src: url("../fonts/gwangi (1).ttf");
-}
 .h-95vh {
   height: 95vh;
 }
@@ -12245,8 +12240,9 @@ button.custom-btn-login:hover {
 
 #header-bg-image {
   background-image: url("./10-bp-cover-image.jpg");
-  background-size: 130%;
-  background-position: bottom center;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   margin-top: 70.88px;
 }
 
@@ -12409,7 +12405,6 @@ button.custom-btn-login:hover {
 }
 
 .activity-filer > div {
-  background: red;
   width: 152px;
   top: 0;
   right: 0;
@@ -12427,13 +12422,14 @@ button.custom-btn-login:hover {
 }
 
 .activity-filer > div::before {
-  content: "\f0ac";
+  content: "\e922";
   position: absolute;
   top: 12px;
   right: left;
   color: #888491;
-  font-family: "Font Awesome 5 Free";
+  font-family: "gwangi";
   font-size: 1em;
+  opacity: 0.5;
   font-weight: 700;
 }
 
@@ -12525,11 +12521,10 @@ button.custom-btn-login:hover {
 }
 
 #profile-bg-banner {
-  background-image: url("https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg");
+  background-image: url("./anthony-delanoix-15928-700x400.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 #join-community {
@@ -12593,6 +12588,14 @@ button.custom-btn-login:hover {
   opacity: 0.7;
 }
 
+footer {
+  background-image: url("https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .footer {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
@@ -12635,6 +12638,7 @@ footer .container-fluid, footer .container-sm, footer .container-md, footer .con
 .custom-footer-links h5, .custom-footer-links .h5 {
   color: #888491;
   font-size: 15px;
+  font-weight: 400;
 }
 
 footer .custom-register-btn {

@@ -1,10 +1,7 @@
 $fs-6: 0.9rem;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "../node_modules/bootstrap/scss/bootstrap";
-@font-face {
-  font-family: "gwangi";
-  src: url("../fonts/gwangi\ \(1\).ttf");
-}
+
 .h-95vh {
   height: 95vh;
 }
@@ -266,8 +263,9 @@ button.custom-btn-login:hover {
 // end of nav bar --------------------------------------
 #header-bg-image {
   background-image: url("./10-bp-cover-image.jpg");
-  background-size: 130%;
-  background-position: bottom center;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   margin-top: 70.88px;
 }
 #item-header {
@@ -275,6 +273,7 @@ button.custom-btn-login:hover {
   margin-top: 70px !important;
   font-size: 15px;
   background-color: rgba(47, 44, 60, 0.7);
+  // background-color: rgba(255, 97, 98, .1) 
 }
 .user-nicename-small {
   font-size: 50%;
@@ -420,7 +419,6 @@ button.custom-btn-login:hover {
   position: relative;
 }
 .activity-filer > div {
-  background: red;
   width: 152px;
   top: 0;
   right: 0;
@@ -436,13 +434,14 @@ button.custom-btn-login:hover {
   font-weight: 700;
 }
 .activity-filer > div::before {
-  content: "\f0ac";
+  content: "\e922";
   position: absolute;
   top: 12px;
   right: left;
   color: #888491;
-  font-family: "Font Awesome 5 Free";
+  font-family: "gwangi";
   font-size: 1em;
+  opacity: .5;
   font-weight: 700;
 }
 .activity-container {
@@ -526,11 +525,10 @@ button.custom-btn-login:hover {
 }
 
 #profile-bg-banner {
-  background-image: url("https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg");
+  background-image: url("./anthony-delanoix-15928-700x400.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 //join community ----------------
@@ -590,6 +588,13 @@ button.custom-btn-login:hover {
   opacity: 0.7;
 }
 // footer ------------------------------------------------
+footer{
+  background-image: url("https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/prefooter-default.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .footer {
   font-size: 15px;
 
@@ -600,6 +605,7 @@ button.custom-btn-login:hover {
   justify-content: center;
   align-items: center;
 }
+
 footer .container-fluid {
   max-width: 1400px;
   padding: 0 40.8px;
@@ -629,6 +635,7 @@ footer .container-fluid {
 .custom-footer-links h5 {
   color: #888491;
   font-size: 15px;
+  font-weight: 400;
 }
 footer .custom-register-btn {
   color: #888491;
