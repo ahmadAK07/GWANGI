@@ -43,7 +43,9 @@ $fs-6: 0.9rem;
   width: 127px;
   height: 43px;
 }
-
+// .nav-links-container{
+//   padding-left: 8px;
+// }
 a.custom-links {
   position: relative;
   display: flex;
@@ -81,13 +83,13 @@ a.custom-links {
 .custom-links:hover::after {
   width: 100%;
 }
-#home-link:hover .custom-home-submenu {
+#home-link:hover #custom-home-submenu {
   display: flex;
   opacity: 1;
 }
 
-.custom-home-submenu,
-.custom-pages-link {
+div#custom-home-submenu,
+div#custom-pages-links {
   position: absolute;
   left: 0;
   top: 110%;
@@ -99,25 +101,29 @@ a.custom-links {
   display: none;
   opacity: 0;
   transition: opacity 0.3s;
+  background:#2f2c3c;
+  height: fit-content;
 }
-.custom-pages-link {
+#custom-pages-links {
   bottom: -200px;
+  height: 140px;
 }
-#pages-link-menu:hover .custom-pages-link {
+#pages-link-menu:hover #custom-pages-links {
   opacity: 1;
   display: flex;
 }
-.custom-home-submenu a,
-.custom-pages-link a {
+div#custom-home-submenu a,
+div#custom-pages-links a {
   width: 100%;
-  padding: 12px 2;
+  font-size: .95em;
   border-radius: 5px;
   text-decoration: none;
-  padding: 10px;
   color: white;
+  padding: 6px 2px !important;
+  transition: all .3s;
 }
-.custom-home-submenu a:hover,
-.custom-pages-link a:hover {
+#custom-home-submenu a:hover,
+#custom-pages-links a:hover {
   background: white;
   color: #2f2c3c;
 }
@@ -136,7 +142,7 @@ a.custom-links {
   width: 700px;
   overflow: hidden;
   border-radius: 5px;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
   background: linear-gradient(90deg, #2f2c3c 70%, transparent 90%),
     url("anthony-delanoix-15928-700x400.jpg");
   background-repeat: no-repeat;
@@ -153,17 +159,18 @@ a.custom-links {
 }
 #community-link-menu li {
   line-height: 1;
-  font-size: 15px;
+  font-size: .95em;
   font-weight: 400;
   letter-spacing: 0px;
 }
 #community-link-menu .custom-col {
   // border: 2px solid red;
   width: 30%;
-  padding: 20px;
+  padding: 20px 4px;
 }
 #community-link-menu a {
   color: white;
+  transition: all .3s;
 }
 #community-link-menu a:hover {
   color: #2f2c3c;
@@ -177,6 +184,7 @@ button.custom-btn-login {
   border: 2px solid #ffffff33;
   background-color: transparent;
   color: white;
+  padding: .1rem 1rem;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -597,13 +605,14 @@ footer{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
 }
 .footer {
   font-size: 15px;
-
+  border-top: 4px solid #cfbfbf;
   font-family: "Montserrat", sans-serif;
   background: rgba(218, 206, 206, 0.94);
-  padding: 5.75% 8px;
+  padding: 5.75% 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,11 +620,11 @@ footer{
 
 footer .container-fluid {
   max-width: 1400px;
-  padding: 0 40.8px;
+  padding: 0 40.8px 0;
 }
 .widget-title {
   color: #3b354d;
-  margin-bottom: 1rem;
+  margin-bottom: 25px;
   font-size: 0.95rem;
   font-weight: 700 !important;
   text-transform: uppercase;
@@ -627,8 +636,11 @@ footer .container-fluid {
   transition: all 0.2s ease-in-out;
   display: block;
   font-family: "Poppins";
-  font-size: 1em;
+  font-size: 1rem;
   font-size: 400;
+}
+footer .col-md-3:not(.first){
+  padding-left: 13px !important;
 }
 .custom-footer-links a:not(.button):hover {
   transform: translateX(4px);
@@ -639,6 +651,9 @@ footer .container-fluid {
   color: #888491;
   font-size: 15px;
   font-weight: 400;
+}
+footer .footer ul{
+  margin-bottom: 4px;
 }
 footer .custom-register-btn {
   color: #888491;
