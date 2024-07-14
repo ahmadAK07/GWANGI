@@ -238,7 +238,7 @@
 
     <div id="header-bg-image">
       <div id="item-header" role="complementary">
-        <div id="header-cover-image" class="element-animated fade-in" style="opacity: 0.0345315"></div>
+        <!-- <div id="header-cover-image" class="element-animated fade-in" style="opacity: 0.0345315"></div> -->
 
         <div id="profile-header" class="profile-header profile-header--member">
           <div id="profile-header-content">
@@ -330,14 +330,14 @@
 
 
     <div id="profile-content_nav" class="mt-md-0 mt-4">
-      <div style="padding: 0 28px" class="d-flex  justify-content-between align-items-center "><button
+      <div style="padding: 0 25px" class="d-flex  justify-content-between align-items-center "><button
           id="profile-nav-toggler" class="pb-3 profile-content-nav-toggler"><span>Menu</span> <span><i
-              class="fa-solid fa-angle-down"></i></span></button> </div>
-      <div class="container  p-0">
+              class="fa-solid fa-angle-down" style="font-weight: 600;"></i></span></button> </div>
+      <div  class="container    p-0">
         <div class="row justify-content-center p-0 ">
           <div class="col-xl-7 col-12 ps-lg-3  px-0 py-0">
-            <ul class=" m-0 ps-lg-5 p-0 d-flex flex-column flex-md-row align-items-center gap-md-2 list-unstyled ">
-              <li class=""> <a href="/">Activity</a> </li>
+            <ul class="h-zero m-0 d-flex flex-column flex-md-row align-items-center gap-md-2 list-unstyled ">
+              <li class=""> <a href="/" class="active">Activity</a> </li>
               <li> <a href="/">Profile</a> </li>
               <li> <a href="/">Friends <span>0</span> </a> </li>
               <li> <a href="/">Groups <span>1</span></a> </li>
@@ -350,11 +350,11 @@
     </div>
 
 
-    <div id="profile-body">
-      <div class="profile-body-container container ">
+    <div id="profile-body" >
+      <div class="profile-body-container container-fluid ">
         <div class="mb-2">
-          <div class="row">
-            <div class="col-md-12 col-lg-9">
+          <div class="row px-0">
+            <div class="col-md-12 col-lg-9 px-0">
               <ul id="profile-sub-nav" class=" d-flex flex-column flex-md-row list-unstyled bg-white">
                 <li> <a href="/" class="d-flex align-items-center active"><i class="fa-solid fa-user"></i> Personal</a>
                 </li>
@@ -395,7 +395,7 @@
 
                 </div>
 
-                <div class="bg-white activity d-flex align-items-center">
+                <div class="bg-white profile-activity d-flex align-items-center">
                   <img src="./13-bpfull.jpg" height="87%" alt="">
                   <div class=" h-100 d-flex flex-column justify-content-center ps-2">
                     <p class="m-0"><a href="" class="text-dark text-decoration-none">Elisio Street</a>'s profile was
@@ -403,7 +403,7 @@
                     <a href="#" class="text-decoration-none"><span class="">5 years ago</span></a>
                   </div>
                 </div>
-                <div class="bg-white activity d-flex align-items-center">
+                <div class="bg-white profile-activity d-flex align-items-center">
                   <img src="./13-bpfull.jpg" height="87%" alt="">
                   <div class=" h-100 d-flex flex-column justify-content-center ps-2">
                     <p class="m-0"><a href="" class="text-dark text-decoration-none">Elisio Street</a>'s profile was
@@ -464,7 +464,7 @@
             </div>
             <div class="col-md-3 px-0">
               <h2 class="widget-title ">FOLLOW US</h2>
-              <ul class="list-unstyled custom-footer-links d-flex flex-column" style="gap: 10px;">
+              <ul class="list-unstyled custom-footer-links d-flex flex-column flex-wrap" style="gap: 10px;">
                 <li>
                   <a href="#" class="d-flex gap-3 align-items-center "><i style="width: 20px;" class=" fa-brands fa-instagram"></i>
                     <span>gwangi_community</span></a>
@@ -487,10 +487,10 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-3 px-0">
-              <h2 class="widget-title mb-5">REGISTER TO GWANGI</h2>
-              <ul class="list-unstyled custom-footer-links d-flex flex-column" style="gap: 10px;">
-                <h5>Meet lots of people on Gwangi and Have amazing time!</h5>
+            <div class="col-md-3 px-0 mt-5 mt-md-0">
+              <h2 class="widget-title mb-4">REGISTER TO GWANGI</h2>
+              <ul class="list-unstyled custom-footer-links d-flex flex-column gap-4" >
+                <h5 class="pb-1">Meet lots of people on Gwangi and Have amazing time!</h5>
 
                 <a href="/" class="btn custom-register-btn button">Register Now</a>
               </ul>

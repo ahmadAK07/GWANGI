@@ -273,17 +273,28 @@ button.custom-btn-login:hover {
 
 // end of nav bar --------------------------------------
 #header-bg-image {
+ 
   background-image: url("./10-bp-cover-image.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
   margin-top: 70.88px;
+  position: relative;
+}
+#header-bg-image::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(47, 44, 60, .6);
 }
 #item-header {
   z-index: 1;
   margin-top: 70px !important;
   font-size: 15px;
-  background-color: rgba(47, 44, 60, 0.7);
+  // background-color: rgba(47, 44, 60, 0.7);
   // background-color: rgba(255, 97, 98, .1) 
 }
 .user-nicename-small {
@@ -344,6 +355,13 @@ button.custom-btn-login:hover {
   font-weight: 700;
   font-size: 0.9em;
 }
+#profile-content_nav a.active::after{
+  width: 100%;
+  color: #ff6162;
+}
+#profile-content_nav a.active{
+  color: #ff6162;
+}
 #profile-content_nav a:hover {
   color: #ff6162;
 }
@@ -360,29 +378,31 @@ button.custom-btn-login:hover {
   background: #f0ebeb;
 }
 .profile-body-container {
-  // border: 2px solid red;
-  max-width: 1400px;
-  padding-left: clamp(25px, 3vw, 60px);
-  padding-right: clamp(25px, 3vw, 60px);
+
+  max-width: 1400px !important;
+  padding-left: clamp(25px, 3vw, 60px) !important;
+  padding-right: clamp(25px, 3vw, 60px) !important;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 95% !important;
   padding-top: 5rem;
   padding-bottom: 2rem;
+  
 }
 #profile-sub-nav {
   width: fit-content;
-
   border-radius: 0.4rem;
   padding: 3px;
-  gap: 5px;
+  gap: 6px;
 }
 #profile-sub-nav a > span {
   font-family: "Montserrat";
   font-weight: 700;
+ 
 }
 #profile-sub-nav a > i {
   font-size: 12px;
+  opacity: .5;
 }
 #profile-sub-nav a {
   padding: 7.5px 10.5px;
@@ -396,6 +416,7 @@ button.custom-btn-login:hover {
   color: #888491;
   border-radius: 5px;
   transition: all 0.3s;
+  min-height: 40px;
 }
 // #profile-sub-nav a i{
 //   color: #8b868d;
@@ -405,6 +426,7 @@ button.custom-btn-login:hover {
 #profile-sub-nav a.active i {
   background: #ff6162;
   color: white;
+  opacity: 1;
 }
 #profile-sub-nav a:not(.active):hover {
   color: #ff6162;
@@ -501,27 +523,29 @@ i.fa-rotate:hover{
 .activity-container>.activity-design>span:hover{
   background: #ff6162;
 }
-.activity-container .activity {
+.activity-container .profile-activity {
   height: 78.81px;
   width: 93%;
   margin-bottom: 30px;
   border-radius: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
 }
 
-.activity-container .activity img {
+.activity-container .profile-activity img {
   transform: translate(-23%, -23%);
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .15);
 }
-.activity-container .activity a:hover, .activity-container .activity span:hover {
+.activity-container .profile-activity a:hover, .activity-container .profile-activity span:hover {
   color: #ff6162 !important;
 }
-.activity-container .activity p {
+.activity-container .profile-activity p {
   font-size: 0.95em;
   color: #888491;
   font-family: "Montserrat";
   font-weight: 700;
 }
-.activity-container .activity span {
+.activity-container .profile-activity span {
   font-weight: 400;
   font-size: 85%;
   transition: all 0.2s ease-in-out;
@@ -645,6 +669,7 @@ footer .container-fluid {
   font-family: "Poppins";
   font-size: 1rem;
   font-size: 400;
+  word-wrap: break-word;
 }
 footer .col-md-3:not(.first){
   padding-left: 13px !important;
@@ -752,6 +777,12 @@ footer .footer-bottom {
     width: 118px;
     height: 39px;
   }
+  .profile-body-container{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
   #join-community h2 {
     font-size: calc((2.35rem) / 1.3);
   }
@@ -759,12 +790,12 @@ footer .footer-bottom {
     font-size: 0.8rem;
     text-align: center;
   }
-  .activity-container .activity {
+  .activity-container .profile-activity {
     width: 100%;
     padding: 10.5px;
     margin-bottom: 1rem;
   }
-  .activity-container .activity img {
+  .activity-container .profile-activity img {
     transform: translate(0, 0);
     height: 80%;
   }
@@ -774,19 +805,30 @@ footer .footer-bottom {
   #profile-sub-nav {
     width: 100%;
     border-radius: 0.4rem;
-    padding: 6px;
-    gap: 1px;
+    padding: 11.5px 7.5px;
+    gap: 6px;
+  }
+  #profile-sub-nav a{
+    padding: 7.5px 10.50px;
+    gap: 12px;
   }
   .profile-body-container {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  #profile-content_nav {
-    overflow: hidden;
+  #profile-content_nav .container{
+     max-width: 100%  !important;
+     padding: 0 25px !important;
   }
   #profile-content_nav ul {
     width: 100%;
+    padding:  0px 25px !important;
+    transition: all .3s;
+    height: 190.5px;
   }
+  #profile-content_nav ul.h-zero{
+    height: 0;
+  } 
   #profile-content_nav a {
     width: 100%;
     padding: 2px 0px;
@@ -799,7 +841,7 @@ footer .footer-bottom {
   }
   #profile-content_nav li {
     width: 100%;
-    margin: 2px 0;
+    margin: 2px;
   }
   #profile-content_nav a span {
     display: flex;
@@ -812,6 +854,12 @@ footer .footer-bottom {
     font-size: 10px;
     border-width: 3px !important;
   }
+  .profile-content-nav-toggler span{
+    font-weight: 700;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+
+  }  
   .profile-content-nav-toggler {
     background: transparent;
     border: none;
@@ -839,13 +887,17 @@ footer .footer-bottom {
   .profile-content-nav-toggler:hover::after {
     width: 100%;
   }
+  #profile-content_nav .container{
+    overflow: hidden;
+  }
   #profile-content_nav ul {
-    height: 0;
-    overflow-y: hidden;
-    transition: all 0.3s;
+     padding: 16px 30px;
   }
   #profile-content_nav .links {
     height: 200.9px;
+  }
+  footer .col-md-3:not(.first){
+    padding-left: 0px !important;
   }
 }
 @media screen and (max-width: 576px) {

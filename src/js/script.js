@@ -5,11 +5,12 @@ let profile_content_nav = document.querySelector("#profile-content_nav ul");
 console.log(profile_content_nav_toggler);
 
 profile_content_nav_toggler.addEventListener("click", (e)=>{
-    if(profile_content_nav.classList.contains("links")){
-        profile_content_nav.classList.remove("links");
+    if(profile_content_nav.classList.contains("h-zero")){
+        profile_content_nav.classList.remove("h-zero");
+        
         e.target.style.color = "black"
     }else{
-        profile_content_nav.classList.add("links");
+        profile_content_nav.classList.add("h-zero");
         e.target.style.color = "#ff6162"
     }
 })
