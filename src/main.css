@@ -12903,7 +12903,7 @@ footer .footer-bottom {
     height: 200.9px;
   }
   footer .col-md-3:not(.first) {
-    padding-left: 0px !important;
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 576px) {
