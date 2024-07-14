@@ -12815,6 +12815,7 @@ footer .footer-bottom {
     border-radius: 0.4rem;
     padding: 11.5px 7.5px;
     gap: 6px;
+    margin-left: 0px !important;
   }
   #profile-sub-nav a {
     padding: 7.5px 10.5px;

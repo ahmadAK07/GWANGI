@@ -763,6 +763,7 @@ footer .footer-bottom {
   #header-bg-image {
     margin-top: -7.4px;
   }
+
 }
 @media screen and (max-width: 769px) {
   .custom-header-h {
@@ -803,10 +804,12 @@ footer .footer-bottom {
     border-radius: 0.4rem;
     padding: 11.5px 7.5px;
     gap: 6px;
+    margin-left: 0px !important;
   }
   #profile-sub-nav a {
     padding: 7.5px 10.5px;
     gap: 12px;
+
   }
   .profile-body-container {
     padding-top: 1rem;
