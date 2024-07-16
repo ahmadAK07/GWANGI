@@ -68,6 +68,10 @@ main.register {
   background: #ff6162;
 
 }
+input.focus-red:focus{
+    outline: none;
+    border: 2px solid #ff6162;
+}
 .register-container form {
   width: 100%;
   max-width: 500px;
