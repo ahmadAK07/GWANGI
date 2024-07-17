@@ -2,9 +2,11 @@
 @import "./nav/nav";
 @import "./footer/footer";
 @import "./profile/profile";
+@import "./register/register";
 * {
   box-sizing: border-box;
 }
+.transition-3{transition: all .3s;}
 body {
   font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -20,150 +22,159 @@ body {
 form label {
   font-weight: 700;
 }
-input {
-  border-color: rgba(0, 0, 0, 0.15);
-}
-main.register {
+main.swipe-members {
   padding: 4% 0;
   word-wrap: break-word;
   background-color: #f0ebeb;
   margin-top: 75.36px;
 }
-.register-container {
+.swipe-container {
   max-width: 1400px;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
+  font-size: 16px;
 }
-.regsiter-list{
-  margin-bottom: 24px;
+.swipe-row {
+  margin: 0 -15px;
 }
-.regsiter-list li{
-  font-size: 3em;
-  line-height: 72px;
-  height: 72px;
+.swipe-col {
+  padding: 0 15px;
 }
-.regsiter-list a{
-  border-width: 2px;
-  display: block;
-  font-size: .75em;
+.swipe-header {
+  margin-bottom: 4%;
+}
+.swipe-header h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  color: #ff6162;
-  position: relative;
-  padding: .3rem 0;
-  letter-spacing: .5px;
-  border-width: 2px solid transparent;
-}
-.regsiter-list a span{
-   line-height: 20px;
-}
-.regsiter-list a::after{
-  content: "";
-  position: relative;
-  bottom: 0;
-  display: block;
-  width: 45px;
-  height: 3px;
-  // line-height: 20px;
-  margin: .4em auto 0 auto;
-  top: 1px;
-  background: #ff6162;
-
-}
-input.focus-red:focus{
-    outline: none;
-    border: 2px solid #ff6162;
-}
-.register-container form {
-  width: 100%;
-  max-width: 500px;
-  padding: 32px;
-  border-radius: 0.4rem;
-  margin-bottom: 1.5rem;
-}
-.alert {
-  width: 100%;
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border-width: 0;
-  border-radius: 0.25rem;
-  font-size: 0.95em;
-}
-.alert-primary {
-  background: #ff6162;
-  color: #fff;
-}
-.login-form label {
+  letter-spacing: 0;
+  color: #3b354d;
   margin-bottom: 0.5rem;
+  text-align: center;
+}
+.swipe-card {
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  transition: all .3s;
+}
+.swipe-card-avatar::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 200%;
+  height: 100px;
+  background: #f0ebeb;
+  left: -50%;
+  bottom: -70px;
+  z-index: 999;
+  transform: rotate(-5deg);
+  transform-origin: center;
+  transition: all 0.3s;
+}
+.swipe-card-avatar::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 200%;
+  height: 100px;
+  background: white;
+  left: -50%;
+  bottom: -75px;
+  z-index: 999;
+  transform: rotate(-5deg);
+  transform-origin: center;
+  transition: all 0.3s;
+}
+.swipe-card:hover .swipe-card-avatar::after {
+  transform: rotate(1deg);
+}
+.swipe-card:hover .swipe-card-avatar::before{
+   transform: rotate(-7deg);
+   bottom: -66px;
+}
+.swipe-card:hover .swipe-card-avatar>img{
+  opacity: .8;
+}
+.swipe-card:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+}
+.swipe-card-body {
+  padding: 0px 16px 16px;
+}
+.swipe-card__title {
+  padding-bottom: 0.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.swipe-card__title a {
+  color: #2a2733;
+}
+.swipe-card__meta {
+  margin-bottom: 0.5rem;
+  font-size: 0.9em;
   color: #888491;
 }
-.login-form input {
-  color: #3b354d;
-  border-width: 2px solid rgba(0, 0, 0, .15);
-  border-radius: 0.4rem;
-  display: block;
-  padding: 0.8rem 1.25rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  width: 100%;
+.swipe-card-meta__first {
+  padding: 0 0.5rem 0.75rem;
 }
-.login-form .login-remember input {
-  margin-right: 0.25em;
-  width: fit-content;
-  cursor: pointer;
+.swipe-card-state::before {
+  content: "\2022";
+  margin-left: 6px;
+  margin-right: 6px;
+  opacity: 0.5;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.7em;
 }
-.login-form button.password-visibility {
+
+.swipe-slider-nav {
+  width: 100px;
+  height: 533px;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 55px;
-  height: 48px;
-  padding: 0;
-  z-index: 2;
-  align-items: center;
+  top: 5px;
   display: flex;
   justify-content: center;
-  background: none;
-  color: #3b354d;
-  border-width: 0;
+  align-items: center;
 }
-.login-form span.dashicons-visibility::before {
-  font-family: "gwangi";
-  content: "\e90d";
-  font-weight: 100;
-  font-style: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  font-size: 20px;
+.swipe-slider-nav i {
+  font-size: 2em;
+  color: rgba(136, 132, 145, .2);
 }
-.login-form .login-submit input {
-  background: #ff6162;
-  border: 2px solid #ff6162;
-  letter-spacing: 1.7px;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.25rem;
-  text-transform: uppercase;
-  padding: 1rem 1.75rem;
+.swipe-prev button:hover {
+    transform: translateX(-10px) scale(1.1);
 }
-.login-form .login-lostpassword a {
-  display: block;
-  padding: 1rem 0.5rem;
-  width: 100%;
-  text-align: center;
-  color: #888491;
-  font-size: 0.85em;
-  font-weight: 600;
-  text-transform: uppercase;
+.swipe-next button:hover {
+    transform: translateX(10px) scale(1.1);
 }
+
+
+// .swipe-slider-nav button::after{
+//   font-family: "gwangi";
+//   content: "\f345";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   font-size: 3.3em;
+//   color: red;
+//   font-weight: 100;
+// }
 @media screen and (max-width: 991px) {
-  main.register{
+  main.swipe-members {
     margin-top: 64.36px;
   }
-  .regsiter-list a{
-    font-size: .5em;
+}
+@media screen and (max-width: 769px) {
+  .swipe-header h1 {
+    font-size: 2rem;
+  }
+  .swipe-slider-nav {
+    position: relative;
+    height: auto;
   }
 }
