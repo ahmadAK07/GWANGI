@@ -373,7 +373,7 @@
                            <h1>Swipe Members</h1>
                       </div>
                 </div>
-                <div class="col-12 swipe-col">
+                <div class="col-12 swipe-col" style="margin-top: 30px;margin-bottom: 30px;">
                      <div class="swipe-body position-relative" style="overflow: hidden;">
                          <ul id="swipe-slider" class="pb-4 w-100 px-0 list-unstyled d-flex flex-row transition-3" >
                             
@@ -827,12 +827,14 @@
       console.log(slider_list.length)
       let slider_x_val = 0;
       swipe_prev.addEventListener("click", ()=>{
-        slider_x_val -= 100;
+        if(slider_x_val > 0){
+          slider_x_val -= 100;
             swipe_slider.style.transform = `translateX(-${slider_x_val}%)`;
+        }
 
       })
       swipe_next.addEventListener("click", ()=>{
-        if(slider_list.length * 100 > slider_list){
+        if((slider_list.length - 1) * 100 > slider_x_val){
           slider_x_val += 100;
           swipe_slider.style.transform = `translateX(-${slider_x_val}%)`;
         }

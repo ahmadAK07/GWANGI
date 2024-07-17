@@ -72,7 +72,7 @@ main.swipe-members {
   background: #f0ebeb;
   left: -50%;
   bottom: -70px;
-  z-index: 999;
+  z-index: 2;
   transform: rotate(-5deg);
   transform-origin: center;
   transition: all 0.3s;
@@ -86,7 +86,7 @@ main.swipe-members {
   background: white;
   left: -50%;
   bottom: -75px;
-  z-index: 999;
+  z-index: 2;
   transform: rotate(-5deg);
   transform-origin: center;
   transition: all 0.3s;
@@ -147,23 +147,12 @@ main.swipe-members {
   color: rgba(136, 132, 145, .2);
 }
 .swipe-prev button:hover {
-    transform: translateX(-10px) scale(1.1);
+    transform: translateX(-10px) scale(1.3);
 }
 .swipe-next button:hover {
-    transform: translateX(10px) scale(1.1);
+    transform: translateX(10px) scale(1.3);
 }
 
-
-// .swipe-slider-nav button::after{
-//   font-family: "gwangi";
-//   content: "\f345";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   font-size: 3.3em;
-//   color: red;
-//   font-weight: 100;
-// }
 @media screen and (max-width: 991px) {
   main.swipe-members {
     margin-top: 64.36px;
@@ -176,5 +165,9 @@ main.swipe-members {
   .swipe-slider-nav {
     position: relative;
     height: auto;
+  }
+  .navs-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
