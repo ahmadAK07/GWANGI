@@ -13392,6 +13392,13 @@ main.swipe-members {
   transition: all 0.3s;
 }
 
+.swipe-card-avatar > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .swipe-card-avatar::before {
   position: absolute;
   display: block;
@@ -13536,5 +13543,8 @@ main.swipe-members {
   .navs-container {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .swipe-col {
+    padding: 0 5px;
   }
 }/*# sourceMappingURL=main.css.map */

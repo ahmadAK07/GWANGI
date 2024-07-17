@@ -63,6 +63,10 @@ main.swipe-members {
   overflow: hidden;
   transition: all .3s;
 }
+.swipe-card-avatar>img{
+  object-fit: cover;
+  object-position: center;
+}
 .swipe-card-avatar::before {
   position: absolute;
   display: block;
@@ -190,5 +194,8 @@ main.swipe-members {
   .navs-container{
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .swipe-col{
+    padding: 0 5px;
   }
 }
