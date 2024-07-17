@@ -55,6 +55,9 @@ main.swipe-members {
   margin-bottom: 0.5rem;
   text-align: center;
 }
+.swipe-col:nth-child(2){
+  margin-bottom: 80px;
+}
 .swipe-card {
   max-width: 300px;
   width: 100%;
@@ -154,30 +157,21 @@ main.swipe-members {
   font-size: 0.7em;
 }
 
-.swipe-slider-nav {
-  width: 100px;
-  height: 533px;
-  position: absolute;
-  top: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swipe-slider-nav i {
-  font-size: 2em;
-  color: rgba(136, 132, 145, .2);
-}
-.navs-container button{
-  outline: none;
-  border: none;
-}
-.swipe-prev:hover {
-    transform: translateX(-10px) scale(1.3);
-}
-.swipe-next:hover  {
-    transform: translateX(10px) scale(1.3);
-}
 
+#swipe-slider .splide__arrow{
+  background: transparent;
+  color: rgba(136, 132, 145, .2) ;
+  transition: all .3s;
+} 
+.splide__arrow--prev:hover{
+  transform: translate(-10px, -15px) scale(1.3);
+}
+.splide__arrow--next:hover{
+  transform: translate(10px, -15px) scale(1.3);
+}
+#swipe-slider .splide__pagination{
+  display: none;
+}
 @media screen and (max-width: 991px) {
   main.swipe-members {
     margin-top: 64.36px;
@@ -187,15 +181,20 @@ main.swipe-members {
   .swipe-header h1 {
     font-size: 2rem;
   }
-  .swipe-slider-nav {
-    position: relative;
-    height: auto;
-  }
-  .navs-container{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
   .swipe-col{
     padding: 0 5px;
+  }
+  .swipe-col:nth-child(2){
+    margin-bottom: 120px;
+  }
+  #swipe-slider .splide__arrow{
+    position: absolute;
+    top: calc(100% + 70px);
+  }
+  #swipe-slider .splide__arrow--prev{
+    left: 38%;
+  }
+  #swipe-slider .splide__arrow--next{
+    right: 38%;
   }
 }
