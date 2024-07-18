@@ -27,328 +27,348 @@
      
       <nav>
         <div
-        class="custom-bg-purple"
-        style="position: fixed; top: 0; left: 0; width: 100vw; z-index: 999"
-      >
-        <div class="container-fluid">
-          <div class="row custom-header-h align-items-center">
-            <!-- logo -->
-            <div class="col-2 h-100 d-flex align-items-center px-0">
-              <a href="/" id="nav-logo">
-                <img
-                  src="https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/logo_community.png"
-                  alt=""
-                />
-              </a>
-            </div>
+          class="custom-bg-purple"
+          style="position: fixed; top: 0; left: 0; width: 100vw; z-index: 999"
+        >
+          <div class="container-fluid">
+            <div class="row custom-header-h align-items-center">
+              <!-- logo -->
+              <div class="col-2 h-100 d-flex align-items-center px-0">
+                <a href="/" id="nav-logo">
+                  <img
+                    src="https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/logo_community.png"
+                    alt=""
+                  />
+                </a>
+              </div>
 
-            <!-- nav links -->
-            <div
-              class="col-1 d-lg-none d-block ms-auto d-flex align-items-center justify-content-sm-center justify-content-start px-0"
-            >
-              <button id="nav-toggler" class="d-flex flex-column btn p-0">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
+              <!-- nav links -->
+              <div
+                class="col-1 d-lg-none d-block ms-auto me-sm-0 me-2 d-flex align-items-center justify-content-sm-center justify-content-start px-0"
+              >
+                <button id="nav-toggler" class="d-flex flex-column btn p-0">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
 
-            <div class="col-10 d-none d-lg-block h-full">
-              <div class="row h-full pe-3 nav-links-container">
-                <div class="col-10 h-full">
-                  <ul
-                    class="list-unstyled h-full d-flex align-items-center justify-content-center gap-2 w-100"
-                  >
-                    <li id="home-link" class="h-full position-relative">
-                      <a
-                        href="/"
-                        class="custom-links text-decoration-none fw-normal"
-                        ><span>Home</span>
-                        <i
-                          style="font-size: 8px; margin-left: 1px"
-                          class="fa-solid fa-chevron-down"
-                        ></i
-                      ></a>
-                      <div class="custom-bg-purple" id="custom-home-submenu">
-                        <a href="/">Home 1</a>
-                        <a href="/">Home 2</a>
-                      </div>
-                    </li>
-                    <li class="h-full position-relative custom-community-link">
-                      <a
-                        href="/"
-                        class="custom-links text-decoration-none active fw-normal"
-                        ><span>Community</span>
-                        <i
-                          style="font-size: 8px; margin-left: 1px"
-                          class="fa-solid fa-chevron-down"
-                        ></i
-                      ></a>
-                      <div id="community-link-menu" class="d-flex">
-                        <div class="custom-col">
-                          <h6 class="mb-2 px-3 py-2">MEMBERS</h6>
-                          <ul
-                            class="list-unstyled px-0 text-white d-flex flex-column gap-2"
-                          >
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Members Directory</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Swipe Members ></a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Member Profile</a
-                              >
-                            </li>
-                          </ul>
+              <div class="col-10 d-none d-lg-block h-full">
+                <div class="row h-full pe-3 nav-links-container">
+                  <div class="col-10 h-full">
+                    <ul
+                      class="list-unstyled h-full d-flex align-items-center justify-content-center gap-1 w-100"
+                    >
+                      <li id="home-link" class="h-full position-relative">
+                        <a
+                          href="/"
+                          class="custom-links text-decoration-none fw-normal"
+                          ><span>Home</span>
+                          <i
+                            style="font-size: 8px; margin-left: 1px"
+                            class="fa-solid fa-chevron-down"
+                          ></i
+                        ></a>
+                        <div class="custom-bg-purple" id="custom-home-submenu">
+                          <a href="/">Home 1</a>
+                          <a href="/">Home 2</a>
                         </div>
-                        <div class="custom-col">
-                          <h6 class="mb-2 px-3 py-2">Groups</h6>
-                          <ul
-                            class="list-unstyled p-2 px-0 text-white d-flex flex-column gap-2"
-                          >
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Groups Directory</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Group Profile</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >+Create Group</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="custom-col">
-                          <h6 class="mb-2 px-3 py-2">OTHERRS</h6>
-                          <ul
-                            class="list-unstyled p-2 px-0 text-white d-flex flex-column gap-2"
-                          >
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Social Wall</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Forums</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Log In</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="d-block text-decoration-none px-3 py-2 rounded mb-1"
-                                href="/"
-                                >Register</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="h-full">
-                      <a
-                        href="/"
-                        class="custom-links text-decoration-none fw-normal"
-                        ><span>Blog</span>
-                      </a>
-                    </li>
-                    <li id="pages-link-menu" class="h-full position-relative">
-                      <a
-                        href="/"
-                        class="custom-links text-decoration-none fw-normal"
-                        ><span>Pages</span>
-                        <i
-                          style="font-size: 8px; margin-left: 1px"
-                          class="fa-solid fa-chevron-down"
-                        ></i
-                      ></a>
-                      <div class=" " id="custom-pages-links">
-                        <a href="/">Members Lists</a>
-                        <a href="/">Group Lists</a>
-                        <a href="/">About Us</a>
-                        <a href="/">Coming Soon</a>
-                      </div>
-                    </li>
-                    <li class="h-full">
-                      <a
-                        href="/"
-                        class="custom-links text-decoration-none fw-normal"
-                        ><span>Shop</span></a
+                      </li>
+                      <li
+                        class="h-full position-relative custom-community-link"
                       >
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="ms-auto col-1 d-flex align-items-center justify-content-end"
-                >
-                  <a href="./register.html">
-                    <button
-                    style="height: 40px"
-                    class="btn custom-btn-login me-1"
+                        <a
+                          href="/"
+                          class="custom-links text-decoration-none active fw-normal"
+                          ><span>Community</span>
+                          <i
+                            style="font-size: 8px; margin-left: 1px"
+                            class="fa-solid fa-chevron-down"
+                          ></i
+                        ></a>
+                        <div id="community-link-menu" class="d-flex">
+                          <div class="custom-col">
+                            <h6 class="mb-2 px-3 py-2">MEMBERS</h6>
+                            <ul
+                              class="list-unstyled px-0 text-white d-flex flex-column gap-2"
+                            >
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Members Directory</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Swipe Members ></a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Member Profile</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="custom-col">
+                            <h6 class="mb-2 px-3 py-2">Groups</h6>
+                            <ul
+                              class="list-unstyled p-2 px-0 text-white d-flex flex-column gap-2"
+                            >
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Groups Directory</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Group Profile</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >+Create Group</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="custom-col">
+                            <h6 class="mb-2 px-3 py-2">OTHERRS</h6>
+                            <ul
+                              class="list-unstyled p-2 px-0 text-white d-flex flex-column gap-2"
+                            >
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Social Wall</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Forums</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Log In</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="d-block text-decoration-none px-3 py-2 rounded mb-1"
+                                  href="/"
+                                  >Register</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="h-full">
+                        <a
+                          href="/"
+                          class="custom-links text-decoration-none fw-normal"
+                          ><span>Blog</span>
+                        </a>
+                      </li>
+                      <li id="pages-link-menu" class="h-full position-relative">
+                        <a
+                          href="/"
+                          class="custom-links text-decoration-none fw-normal"
+                          ><span>Pages</span>
+                          <i
+                            style="font-size: 8px; margin-left: 1px"
+                            class="fa-solid fa-chevron-down"
+                          ></i
+                        ></a>
+                        <div class=" " id="custom-pages-links">
+                          <a href="/">Members Lists</a>
+                          <a href="/">Group Lists</a>
+                          <a href="/">About Us</a>
+                          <a href="/">Coming Soon</a>
+                        </div>
+                      </li>
+                      <li class="h-full">
+                        <a
+                          href="/"
+                          class="custom-links text-decoration-none fw-normal"
+                          ><span>Shop</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="ms-auto col-1 d-flex align-items-center justify-content-end"
                   >
-                    Login
-                  </button>
-                  </a>
+                    <a href="./register.html">
+                      <button
+                        style="height: 40px"
+                        class="btn custom-btn-login me-1"
+                      >
+                        Login
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Menu for screen lesser than 769 -->
-        <div id="sub-menu" class="custom-sub-menu col-12 px-3 h-0">
-          <div class="custom-menu-scroller">
-            <button
-              style="width: 100%; height: 40px"
-              class="btn custom-btn-login"
-            >
-              Login
-            </button>
-            <div class="pt-5 ps-3">
-              <ul class="list-unstyled d-flex flex-column">
-                <li>
-                  <a href="/" class="d-block custom-sub-menu-links main mb-1"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a href="/" class="d-block custom-sub-menu-links">Home 1</a>
-                </li>
-                <li>
-                  <a href="/" class="d-block custom-sub-menu-links">Home 2</a>
-                </li>
-              </ul>
-              <ul class="list-unstyled d-flex flex-column">
-                <li>
-                  <a href="/" class="d-block custom-sub-menu-links main"
-                    >Community</a
-                  >
-                </li>
-                <li>
-                  <a href="/" class="d-block custom-sub-menu-links">Members</a>
-                  <ul class="list-unstyled ps-2 pt-2 d-flex flex-column gap-2">
-                    <li>
-                      <a href="/" class="custom-sub-menu-links"
-                        >Members Directory</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/" class="custom-sub-menu-links"
-                        >Swipe Members</a
-                      >
-                      <ul
-                        class="list-unstyled ps-2 pt-2 d-flex flex-column gap-2"
-                      >
-                        <li>
-                          <a href="/" class="custom-sub-menu-links"
-                            >All Members</a
-                          >
-                        </li>
-                        <li>
-                          <a href="/" class="custom-sub-menu-links"
-                            >Only New York</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="/" class="custom-sub-menu-links"
-                        >Member Profile</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+          <!-- Menu for screen lesser than 769 -->
+          <div id="sub-menu" class="custom-sub-menu col-12 px-3 h-0">
+            <div class="custom-menu-scroller">
+              <button
+                style="width: 100%; height: 40px"
+                class="btn custom-btn-login"
+              >
+                Login
+              </button>
+              <div class="pt-5 ps-3">
+                <ul class="list-unstyled d-flex flex-column">
+                  <li>
+                    <a href="/" class="d-block custom-sub-menu-links main mb-1"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/" class="d-block custom-sub-menu-links">Home 1</a>
+                  </li>
+                  <li>
+                    <a href="/" class="d-block custom-sub-menu-links">Home 2</a>
+                  </li>
+                </ul>
+                <ul class="list-unstyled d-flex flex-column">
+                  <li>
+                    <a href="/" class="d-block custom-sub-menu-links main"
+                      >Community</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/" class="d-block custom-sub-menu-links"
+                      >Members</a
+                    >
+                    <ul
+                      class="list-unstyled ps-2 pt-2 d-flex flex-column gap-2"
+                    >
+                      <li>
+                        <a href="/" class="custom-sub-menu-links"
+                          >Members Directory</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/" class="custom-sub-menu-links"
+                          >Swipe Members</a
+                        >
+                        <ul
+                          class="list-unstyled ps-2 pt-2 d-flex flex-column gap-2"
+                        >
+                          <li>
+                            <a href="/" class="custom-sub-menu-links"
+                              >All Members</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/" class="custom-sub-menu-links"
+                              >Only New York</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="/" class="custom-sub-menu-links"
+                          >Member Profile</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
 
-                <li>
-                  <a href="/" class="custom-sub-menu-links">Groups</a>
-                  <ul class="list-unstyled ps-2 pt-2 d-flex flex-column gap-2">
-                    <li>
-                      <a href="/" class="custom-sub-menu-links"
-                        >Groups Directory</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/" class="custom-sub-menu-links"
-                        >Group Profile</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/" class="custom-sub-menu-links"
-                        >+Create Group</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="" class="custom-sub-menu-links">Others</a>
-                  <ul class="list-unstyled ps-2 pt-2 d-flex flex-column gap-2">
-                    <li>
-                      <a href="/" class="custom-sub-menu-links">Social Wall</a>
-                    </li>
-                    <li>
-                      <a href="/" class="custom-sub-menu-links">Forums</a>
-                    </li>
-                    <li><a href="/" class="custom-sub-menu-links">Login</a></li>
-                    <li>
-                      <a href="/" class="custom-sub-menu-links">Register</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="/" class="custom-sub-menu-links main">Blog</a></li>
-                <li>
-                  <a href="/" class="custom-sub-menu-links main">Pages</a>
-                </li>
+                  <li>
+                    <a href="/" class="custom-sub-menu-links">Groups</a>
+                    <ul
+                      class="list-unstyled ps-2 pt-2 d-flex flex-column gap-2"
+                    >
+                      <li>
+                        <a href="/" class="custom-sub-menu-links"
+                          >Groups Directory</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/" class="custom-sub-menu-links"
+                          >Group Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/" class="custom-sub-menu-links"
+                          >+Create Group</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="" class="custom-sub-menu-links">Others</a>
+                    <ul
+                      class="list-unstyled ps-2 pt-2 d-flex flex-column gap-2"
+                    >
+                      <li>
+                        <a href="/" class="custom-sub-menu-links"
+                          >Social Wall</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/" class="custom-sub-menu-links">Forums</a>
+                      </li>
+                      <li>
+                        <a href="/" class="custom-sub-menu-links">Login</a>
+                      </li>
+                      <li>
+                        <a href="/" class="custom-sub-menu-links">Register</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/" class="custom-sub-menu-links main">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/" class="custom-sub-menu-links main">Pages</a>
+                  </li>
 
-                <li>
-                  <a href="/" class="custom-sub-menu-links">Members Lists</a>
-                </li>
-                <li>
-                  <a href="/" class="custom-sub-menu-links">Group Lists</a>
-                </li>
-                <li><a href="/" class="custom-sub-menu-links">About Us</a></li>
-                <li>
-                  <a href="/" class="custom-sub-menu-links">Coming Soon</a>
-                </li>
+                  <li>
+                    <a href="/" class="custom-sub-menu-links">Members Lists</a>
+                  </li>
+                  <li>
+                    <a href="/" class="custom-sub-menu-links">Group Lists</a>
+                  </li>
+                  <li>
+                    <a href="/" class="custom-sub-menu-links">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/" class="custom-sub-menu-links">Coming Soon</a>
+                  </li>
 
-                <li><a href="/" class="custom-sub-menu-links main">Shop</a></li>
-              </ul>
+                  <li>
+                    <a href="/" class="custom-sub-menu-links main">Shop</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </nav>
             
       <div id="header-bg-image">
