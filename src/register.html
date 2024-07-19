@@ -418,7 +418,7 @@
               <input
                 type="password"
                 name="pwd"
-                id="user_pass"
+                id="user_password"
                 autocomplete="current-password"
                 spellcheck="false"
                 class="input focus-red"
@@ -430,10 +430,7 @@
                 class="password-visibility"
                 aria-label="Display password"
               >
-                <span
-                  class="dashicons dashicons-visibility"
-                  aria-hidden="true"
-                ></span>
+              🙈
               </button>
             </p>
             <p class="login-remember mb-3" style="word-wrap: break-word">
@@ -592,6 +589,14 @@
           document.body.style.overflow = "";
         }
       });
+
+      let password_field = document.getElementById("user_password");
+      let pass_visibility_btn = document.querySelector(".password-visibility");
+      pass_visibility_btn.addEventListener("click", function(){
+            let type = password_field.getAttribute("type") == "password" ? "text" : "password";
+            password_field.setAttribute("type", type);
+            pass_visibility_btn.textContent = type == "password" ? "🙈" : "👁";
+      })
     </script>
   </body>
 </html>

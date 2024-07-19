@@ -376,8 +376,17 @@
 
                     <div class="col-lg-3 mb-lg-0 mb-4">
                         <form action="" class="groups-search-form position-relative">
-                            <input type="text" name="groups_search" placeholder="Search Groups..." value="" class="transition-3 groups-search__text w-100">
+                          <label for="group-search" class="position-absolute"></label>
+                            <input type="text" id="group_search" name="groups_search" placeholder="Search Groups..." value="" class="transition-3 groups-search__text w-100">
                             <button class="groups-search__submit" type="submit"> <i style="opacity: .7;" class="fa-solid fa-magnifying-glass"></i> </button>
+                            <div class="position-absolute w-100 p-4 items-box">
+                              <div class="item transition-3" data-searchvalue="apple">Apple</div>
+                              <div class="item transition-3" data-searchvalue="banana">Banana</div>
+                              <div class="item transition-3" data-searchvalue="cherry">Cherry</div>
+                              <div class="item transition-3" data-searchvalue="date">Date</div>
+                              <div class="item transition-3" data-searchvalue="elderberry">Elderberry</div>
+                              
+                            </div>
                         </form>
                     </div>
                     <div class="col-md-3 d-flex justify-content-lg-end align-items-center">
@@ -695,8 +704,7 @@
       </div>
     </footer>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       // nav js
       let sub_menu = document.getElementById("sub-menu");
@@ -714,6 +722,36 @@
           document.body.style.overflow = "";
         }
       });
-    </script>
+
+      $(document).ready(function(){
+        $(".item").each(function(){
+          $(this).on("click", function(){
+            let choosenVal =  $(this).data("searchvalue").toLowerCase();
+            $("#group_search").val(choosenVal);
+            $(".item").hide();
+          })
+        })
+    $("#group_search").on("input", function(){
+        var searchValue = $(this).val().toLowerCase();
+
+        // If input value is empty, hide all items
+        if(searchValue === "") {
+            $(".item").hide();
+        } else {
+            // Otherwise, filter items based on the search value
+            $(".item").each(function(){
+                var itemVal = $(this).data("searchvalue").toLowerCase();
+                if(itemVal.includes(searchValue)){
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        }
+    });
+});
+
+   
+   </script>
   </body>
 </html>
