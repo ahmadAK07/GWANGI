@@ -35,17 +35,20 @@ input.members-search__text::placeholder {
 .items-box {
   top: 100%;
   left: 0;
-  background: #f0ebeb;
+  background: white;
   z-index: 2;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
 }
 .item {
   display: none;
   padding: 10px 23px;
   cursor: pointer;
-  border-radius: 0.4rem;
+  font-family: "Montserrat";
+  font-weight: 700;
 }
 .item:hover {
-  background: white;
+    color: white;
+   background: #ff6162;
 }
 .members-search__submit {
   position: absolute;

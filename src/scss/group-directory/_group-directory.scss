@@ -32,20 +32,23 @@ input.groups-search__text::placeholder {
 .groups-search__text:focus {
   border-bottom: 2px solid #ff6162;
 }
-.items-box{
+.items-box {
   top: 100%;
   left: 0;
-  background: #f0ebeb;
+  background: white;
   z-index: 2;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
 }
-.item{
+.item {
   display: none;
   padding: 10px 23px;
   cursor: pointer;
-  border-radius: .4rem;
+  font-family: "Montserrat";
+  font-weight: 700;
 }
-.item:hover{
-  background: white;
+.item:hover {
+    color: white;
+   background: #ff6162;
 }
 .groups-search__submit {
   position: absolute;
