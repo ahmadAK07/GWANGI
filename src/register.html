@@ -430,7 +430,7 @@
                 class="password-visibility"
                 aria-label="Display password"
               >
-              🙈
+                🙈
               </button>
             </p>
             <p class="login-remember mb-3" style="word-wrap: break-word">
@@ -468,7 +468,7 @@
         </div>
       </div>
     </main>
-    
+
     <div id="profile-bg-banner">
       <div class="container-fluid" id="join-community">
         <div
@@ -592,11 +592,14 @@
 
       let password_field = document.getElementById("user_password");
       let pass_visibility_btn = document.querySelector(".password-visibility");
-      pass_visibility_btn.addEventListener("click", function(){
-            let type = password_field.getAttribute("type") == "password" ? "text" : "password";
-            password_field.setAttribute("type", type);
-            pass_visibility_btn.textContent = type == "password" ? "🙈" : "👁";
-      })
+      pass_visibility_btn.addEventListener("click", function () {
+        let type =
+          password_field.getAttribute("type") == "password"
+            ? "text"
+            : "password";
+        password_field.setAttribute("type", type);
+        pass_visibility_btn.textContent = type == "password" ? "🙈" : "👁";
+      });
     </script>
   </body>
 </html>
