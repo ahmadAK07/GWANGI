@@ -1,16 +1,17 @@
 let sub_menu = document.getElementById("sub-menu");
 let nav_toggler = document.getElementById("nav-toggler");
-let profile_content_nav_toggler = document.querySelector("#profile-content_nav #profile-nav-toggler");
-let profile_content_nav = document.querySelector("#profile-content_nav ul");
-console.log(profile_content_nav_toggler);
+let content_nav_toggler = document.querySelector("#content_nav #profile-nav-toggler");
+let content_nav = document.querySelector("#content_nav ul");
+console.log(content_nav_toggler);
+console.log(content_nav_toggler);
 
-profile_content_nav_toggler.addEventListener("click", (e)=>{
-    if(profile_content_nav.classList.contains("h-zero")){
-        profile_content_nav.classList.remove("h-zero");
+content_nav_toggler.addEventListener("click", (e)=>{
+    if(content_nav.classList.contains("h-zero")){
+        content_nav.classList.remove("h-zero");
         
         e.target.style.color = "black"
     }else{
-        profile_content_nav.classList.add("h-zero");
+        content_nav.classList.add("h-zero");
         e.target.style.color = "#ff6162"
     }
 })
