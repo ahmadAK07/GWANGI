@@ -1010,11 +1010,11 @@
         © 2024 GWANGI. All rights reserved.
       </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       // nav js
-      let sub_menu = document.getElementById("sub-menu");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let sub_menu = document.getElementById("sub-menu");
       let nav_toggler = document.getElementById("nav-toggler");
       nav_toggler.addEventListener("click", () => {
         if (sub_menu.classList.contains("h-0")) {
@@ -1030,33 +1030,38 @@
         }
       });
 
-      $(document).ready(function () {
-        $(".item").each(function () {
-          $(this).on("click", function () {
-            let choosenVal = $(this).data("searchvalue").toLowerCase();
-            $("#members_search").val(choosenVal);
-            $(".item").hide();
-          });
-        });
-        $("#members_search").on("input", function () {
-          var searchValue = $(this).val().toLowerCase();
+            const items = document.querySelectorAll(".item");
+            const searchInput = document.getElementById("members_search");
 
-          // If input value is empty, hide all items
-          if (searchValue === "") {
-            $(".item").hide();
-          } else {
-            // Otherwise, filter items based on the search value
-            $(".item").each(function () {
-              var itemVal = $(this).data("searchvalue").toLowerCase();
-              if (itemVal.includes(searchValue)) {
-                $(this).show();
-              } else {
-                $(this).hide();
-              }
+            items.forEach(function (item) {
+                item.addEventListener("click", function () {
+                    const chosenVal = item.getAttribute("data-searchvalue").toLowerCase();
+                    searchInput.value = chosenVal;
+                    items.forEach(function (item) {
+                        item.style.display = "none";
+                    });
+                });
             });
-          }
+
+            searchInput.addEventListener("input", function () {
+                const searchValue = searchInput.value.toLowerCase();
+
+                if (searchValue === "") {
+                    items.forEach(function (item) {
+                        item.style.display = "none";
+                    });
+                } else {
+                    items.forEach(function (item) {
+                        const itemVal = item.getAttribute("data-searchvalue").toLowerCase();
+                        if (itemVal.includes(searchValue)) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                }
+            });
         });
-      });
-    </script>
+   </script>
   </body>
 </html>

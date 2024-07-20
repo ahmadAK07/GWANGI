@@ -430,7 +430,7 @@
                 class="password-visibility"
                 aria-label="Display password"
               >
-                🙈
+              <i class="fa-solid fa-eye"></i>
               </button>
             </p>
             <p class="login-remember mb-3" style="word-wrap: break-word">
@@ -598,7 +598,7 @@
             ? "text"
             : "password";
         password_field.setAttribute("type", type);
-        pass_visibility_btn.textContent = type == "password" ? "🙈" : "👁";
+        pass_visibility_btn.innerHTML = type == "password" ? `<i class="fa-solid fa-eye"></i>` : `<i class="fa-solid fa-eye-slash"></i>`;
       });
     </script>
   </body>
