@@ -12389,7 +12389,6 @@ footer .footer-bottom {
   }
 }
 #header-bg-image {
-  background-image: url("../Images/10-bp-cover-image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14214,7 +14213,6 @@ input.members-search__text::placeholder {
   }
 }
 #header-bg-image {
-  background-image: url("../Images/groups-header-bg.jpg");
   background-size: 140%;
   background-position: bottom center;
   background-repeat: no-repeat;
