@@ -14111,36 +14111,6 @@ input.members-search__text::placeholder {
   font-size: 0.7em;
 }
 
-.members-model-toggler {
-  height: 40px;
-  width: 40px;
-  margin-left: 5px;
-  cursor: pointer;
-  border-radius: 0.4rem;
-}
-
-.members-model-toggler:hover::after {
-  background: rgba(255, 97, 98, 0.1);
-}
-
-.members-model-toggler::after {
-  font-family: "fontAwesome";
-  content: "\f1de";
-  font-weight: 100;
-  transition: all 0.3s;
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-style: normal;
-  text-rendering: auto;
-  position: absolute;
-  font-size: 0.9em;
-  color: #ff6162;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .members-list li {
   max-width: 16.66667%;
   width: 100%;
@@ -14232,10 +14202,6 @@ input.members-search__text::placeholder {
   color: #2a2733;
 }
 
-.members-card__title a:hover {
-  color: #ff6162;
-}
-
 .members-card__meta {
   padding-bottom: 1rem;
   font-size: 0.85rem;
@@ -14249,35 +14215,31 @@ input.members-search__text::placeholder {
   padding-bottom: 0.75rem;
 }
 
+.members-item-desc {
+  padding: 1rem 0;
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+}
+
+.members-item-desc p {
+  margin-bottom: 0;
+}
+
+.members-card-activity {
+  background: rgba(0, 0, 15, 0.05);
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 13px;
+}
+
 .members-pagination {
-  padding: 1rem 20px;
+  padding: 1rem 16px;
   font-style: italic;
   opacity: 0.7;
   font-size: 13px;
   color: #888491;
-}
-
-.members-pagination-links span,
-.members-pagination-links a {
-  color: black;
-  background: white;
-  min-width: 45px;
-  min-height: 45px;
-  line-height: 1;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  border-radius: 0.4rem;
-}
-
-.members-pagination-links a:hover {
-  background: black;
-  color: white;
-}
-
-.members-pagination-links span {
-  background: black;
-  color: white;
 }
 
 @media screen and (max-width: 1600px) {
@@ -14340,9 +14302,6 @@ input.members-search__text::placeholder {
   #members-order-by {
     width: 100%;
   }
-  .members-list {
-    padding: 0px 0px;
-  }
   .members-list li {
     max-width: 50%;
   }
@@ -14350,7 +14309,6 @@ input.members-search__text::placeholder {
 @media screen and (max-width: 576px) {
   .members-list li {
     max-width: 100%;
-    padding: 0px 0px;
   }
 }
 * {
