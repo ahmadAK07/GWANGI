@@ -14810,7 +14810,8 @@ main.home-2 {
   max-width: 100%;
 }
 
-.home-2-hero__title, .home-2-social__title {
+.home-2-hero__title,
+.home-2-social__title {
   padding-bottom: 5px;
   font-size: 3.2rem;
   line-height: 1.2;
@@ -14839,7 +14840,8 @@ main.home-2 {
   letter-spacing: 1.7px;
 }
 
-.home-2-members, .home-2-blog {
+.home-2-members,
+.home-2-blog {
   padding: 4% 0%;
   background-color: #f0ebeb;
 }
@@ -14849,14 +14851,17 @@ main.home-2 {
   margin-right: calc(50% - 50vw);
 }
 
-.home-2-members__title, .home-2-members__title span {
+.home-2-members__title,
+.home-2-members__title span {
   font-size: 2rem;
   color: #2a2733;
   font-family: "Montserrat";
   font-weight: 700;
 }
 
-.home-2-members__header h3, .home-2-members__header .h3, .home-2-social__header h3, .home-2-social__header .h3 {
+.home-2-members__header h3, .home-2-members__header .h3,
+.home-2-social__header h3,
+.home-2-social__header .h3 {
   margin-top: 2%;
   font-size: 1.2rem;
   font-weight: 400;
@@ -14864,7 +14869,9 @@ main.home-2 {
   line-height: 1.5;
 }
 
-.home-2-members__body, .home-2-blog__body, .home-2-social__body {
+.home-2-members__body,
+.home-2-blog__body,
+.home-2-social__body {
   margin-top: 4%;
 }
 
@@ -14881,6 +14888,7 @@ main.home-2 {
 
 .home-2-card:hover {
   transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px 0px;
 }
 
 .home-2-card:hover .home-2-card__avatar {
@@ -15042,6 +15050,10 @@ main.home-2 {
   color: #888491;
 }
 
+.home-2-card .dot-before::before {
+  padding-right: 5px;
+}
+
 .dot-before::before {
   content: "•";
   display: inline-block;
@@ -15082,6 +15094,10 @@ main.home-2 {
 
 .continue-btn:hover::after {
   background-color: #ff6162;
+}
+
+.blog-post__text {
+  margin-bottom: 50px;
 }
 
 .blog-post__footer {
@@ -15136,7 +15152,8 @@ main.home-2 {
   transition: all 0.3s;
 }
 
-.home-2-social__menu .icon-wrapper::before, .home-2-social__menu .icon-wrapper::after {
+.home-2-social__menu .icon-wrapper::before,
+.home-2-social__menu .icon-wrapper::after {
   height: 6rem;
   width: 6rem;
   content: "";
@@ -15177,10 +15194,10 @@ main.home-2 {
 .home-2-social__menu i {
   width: 6rem;
   height: 6rem;
-  background: black;
+  background: #2a2733;
   border-radius: 50%;
   text-align: center;
-  font-size: 48px;
+  font-size: 2.9rem;
   margin-bottom: 1.5rem;
   line-height: 6rem;
   position: relative;
@@ -15190,13 +15207,17 @@ main.home-2 {
   main.home-2 {
     margin-top: 64.36px;
   }
-  .home-2-hero__title {
+  .home-2-hero__title, .home-2-social__title {
     font-size: 2rem;
   }
   .home-2-hero__text {
     margin-top: 25px;
   }
-  .home-2-members__header h3, .home-2-members__header .h3, .home-2-members__body, .home-2-blog__body, .home-2-social__header h3, .home-2-social__header .h3 {
+  .home-2-members__header h3, .home-2-members__header .h3,
+  .home-2-members__body,
+  .home-2-blog__body,
+  .home-2-social__header h3,
+  .home-2-social__header .h3 {
     margin-top: 25px;
   }
   .home-2-members__body li {
@@ -15210,7 +15231,9 @@ main.home-2 {
   }
 }
 @media screen and (max-width: 769px) {
-  .home-2-hero, .home-2-members, .home-2-blog {
+  .home-2-hero,
+  .home-2-members,
+  .home-2-blog {
     padding: 50px 0px;
   }
   .home-2-members__body li {
@@ -15219,12 +15242,18 @@ main.home-2 {
   .home-2-blog__body li {
     max-width: 100%;
   }
+  .home-2-social {
+    padding: 50px 0;
+  }
   .home-2-social__menu li {
     max-width: 50%;
   }
+  .blog-post__text {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (max-width: 576px) {
-  .home-2-hero__title {
+  .home-2-hero__title, .home-2-social__title {
     font-size: 1.7777777778rem;
   }
   .home-2-members__body li {
@@ -15232,6 +15261,9 @@ main.home-2 {
   }
   .home-2-social__menu li {
     max-width: 100%;
+  }
+  .home-2-social__header h3, .home-2-social__header .h3 {
+    font-size: 1rem;
   }
 }
 * {
