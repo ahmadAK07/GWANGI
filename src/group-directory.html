@@ -412,7 +412,7 @@
           <div
             class="col-md-3 d-flex justify-content-lg-end align-items-center"
           >
-            <div class="btn-groups-all me-md-4 mb-md-0 mb-2">
+            <div class="btn-groups-all rounded-3 me-md-4 mb-md-0 mb-2">
               <button class="transition-3">
                 All Groups
                 <span class="transition-3">6</span>
@@ -437,7 +437,7 @@
         <div class="row">
           <ul class="groups-directory-list list-unstyled d-flex flex-wrap px-1">
             <li class="">
-              <div class="groups-card w-100 bg-white transition-3">
+              <div class="groups-card rounded-3 w-100 bg-white transition-3">
                 <a href="">
                   <div
                     class="groups-card__avatar d-flex align-items-center justify-content-center"
@@ -464,7 +464,7 @@
                         habitasse platea dictumst.
                       </p>
                     </div>
-                    <div class="groups-card-activity">
+                    <div class="groups-card-activity rounded-3">
                       <strong>
                         <span>14 hours ago</span>
                       </strong>
@@ -474,7 +474,7 @@
               </div>
             </li>
             <li class="">
-              <div class="groups-card w-100 bg-white transition-3">
+              <div class="groups-card rounded-3 w-100 bg-white transition-3">
                 <a href="#">
                   <div
                     class="groups-card__avatar d-flex align-items-center justify-content-center"
@@ -499,7 +499,7 @@
                         habitasse platea dictumst.
                       </p>
                     </div>
-                    <div class="groups-card-activity">
+                    <div class="groups-card-activity rounded-3">
                       <strong>
                         <span>15 hours ago</span>
                       </strong>
@@ -509,7 +509,7 @@
               </div>
             </li>
             <li class="">
-              <div class="groups-card w-100 bg-white transition-3">
+              <div class="groups-card rounded-3 w-100 bg-white transition-3">
                 <a href="#">
                   <div
                     class="groups-card__avatar d-flex align-items-center justify-content-center"
@@ -544,7 +544,7 @@
               </div>
             </li>
             <li class="">
-              <div class="groups-card w-100 bg-white transition-3">
+              <div class="groups-card rounded-3 w-100 bg-white transition-3">
                 <a href="#">
                   <div
                     class="groups-card__avatar d-flex align-items-center justify-content-center"
@@ -571,7 +571,7 @@
                         habitasse platea dictumst.
                       </p>
                     </div>
-                    <div class="groups-card-activity">
+                    <div class="groups-card-activity rounded-3">
                       <strong>
                         <span>a month ago</span>
                       </strong>
@@ -581,7 +581,7 @@
               </div>
             </li>
             <li class="">
-              <div class="groups-card w-100 bg-white transition-3">
+              <div class="groups-card rounded-3 w-100 bg-white transition-3">
                 <a href="#">
                   <div
                     class="groups-card__avatar d-flex align-items-center justify-content-center"
@@ -608,7 +608,7 @@
                         habitasse platea dictumst.
                       </p>
                     </div>
-                    <div class="groups-card-activity">
+                    <div class="groups-card-activity rounded-3">
                       <strong>
                         <span>a month ago</span>
                       </strong>
@@ -618,7 +618,7 @@
               </div>
             </li>
             <li class="">
-              <div class="groups-card w-100 bg-white transition-3">
+              <div class="groups-card rounded-3 w-100 bg-white transition-3">
                 <a href="#">
                   <div
                     class="groups-card__avatar d-flex align-items-center justify-content-center"
@@ -645,7 +645,7 @@
                         habitasse platea dictumst.
                       </p>
                     </div>
-                    <div class="groups-card-activity">
+                    <div class="groups-card-activity rounded-3">
                       <strong>
                         <span>a month ago</span>
                       </strong>
@@ -772,57 +772,59 @@
     </footer>
 
     <script>
-    
-    document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
         let sub_menu = document.getElementById("sub-menu");
-      let nav_toggler = document.getElementById("nav-toggler");
-      nav_toggler.addEventListener("click", () => {
-        if (sub_menu.classList.contains("h-0")) {
-          sub_menu.classList.remove("h-0");
-          sub_menu.classList.add("h-95vh");
-          nav_toggler.classList.add("toggled");
-          document.body.style.overflow = "hidden";
-        } else {
-          sub_menu.classList.remove("h-95vh");
-          sub_menu.classList.add("h-0");
-          nav_toggler.classList.remove("toggled");
-          document.body.style.overflow = "";
-        }
-      });
-
-            const items = document.querySelectorAll(".item");
-            const searchInput = document.getElementById("group_search");
-
-            items.forEach(function (item) {
-                item.addEventListener("click", function () {
-                    const chosenVal = item.getAttribute("data-searchvalue").toLowerCase();
-                    searchInput.value = chosenVal;
-                    items.forEach(function (item) {
-                        item.style.display = "none";
-                    });
-                });
-            });
-
-            searchInput.addEventListener("input", function () {
-                const searchValue = searchInput.value.toLowerCase();
-
-                if (searchValue === "") {
-                    items.forEach(function (item) {
-                        item.style.display = "none";
-                    });
-                } else {
-                    items.forEach(function (item) {
-                        const itemVal = item.getAttribute("data-searchvalue").toLowerCase();
-                        if (itemVal.includes(searchValue)) {
-                            item.style.display = "block";
-                        } else {
-                            item.style.display = "none";
-                        }
-                    });
-                }
-            });
+        let nav_toggler = document.getElementById("nav-toggler");
+        nav_toggler.addEventListener("click", () => {
+          if (sub_menu.classList.contains("h-0")) {
+            sub_menu.classList.remove("h-0");
+            sub_menu.classList.add("h-95vh");
+            nav_toggler.classList.add("toggled");
+            document.body.style.overflow = "hidden";
+          } else {
+            sub_menu.classList.remove("h-95vh");
+            sub_menu.classList.add("h-0");
+            nav_toggler.classList.remove("toggled");
+            document.body.style.overflow = "";
+          }
         });
-   
+
+        const items = document.querySelectorAll(".item");
+        const searchInput = document.getElementById("group_search");
+
+        items.forEach(function (item) {
+          item.addEventListener("click", function () {
+            const chosenVal = item
+              .getAttribute("data-searchvalue")
+              .toLowerCase();
+            searchInput.value = chosenVal;
+            items.forEach(function (item) {
+              item.style.display = "none";
+            });
+          });
+        });
+
+        searchInput.addEventListener("input", function () {
+          const searchValue = searchInput.value.toLowerCase();
+
+          if (searchValue === "") {
+            items.forEach(function (item) {
+              item.style.display = "none";
+            });
+          } else {
+            items.forEach(function (item) {
+              const itemVal = item
+                .getAttribute("data-searchvalue")
+                .toLowerCase();
+              if (itemVal.includes(searchValue)) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          }
+        });
+      });
     </script>
   </body>
 </html>

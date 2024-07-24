@@ -99,13 +99,11 @@ div#item-header .profile-header__avatar {
   opacity: 1 !important;
   background-color: #3d404a;
   width: 100%;
-
   height: auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border-radius: 0.4rem;
 }
 
 #item-header img.avatar {
@@ -159,7 +157,6 @@ div#item-header .profile-header__avatar {
 }
 
 #item-header .profile-header__body .user-nicename {
-  // margin-bottom: 1rem;
   color: inherit;
   padding-top: 10px;
 }
@@ -267,7 +264,6 @@ span.activity {
 }
 #profile-sub-nav {
   width: fit-content;
-  border-radius: 0.4rem;
   padding: 3px;
   gap: 6px;
   margin-left: 10px;
@@ -435,7 +431,6 @@ i.fa-rotate:hover {
   background: white;
   width: 93%;
   padding: 15px;
-  border-radius: 0.4rem;
   font-size: 0.7em;
   font-size: 600;
   letter-spacing: 3px;
@@ -563,7 +558,6 @@ i.fa-rotate:hover {
   }
   #profile-sub-nav {
     width: 100%;
-    border-radius: 0.4rem;
     padding: 11.5px 7.5px;
     gap: 6px;
     margin-left: 0px !important;

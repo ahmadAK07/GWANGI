@@ -12487,7 +12487,6 @@ div#item-header .profile-header__avatar {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  border-radius: 0.4rem;
 }
 
 #item-header img.avatar {
@@ -12634,7 +12633,6 @@ span.activity {
 #profile-sub-nav {
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 0.4rem;
   padding: 3px;
   gap: 6px;
   margin-left: 10px;
@@ -12817,7 +12815,6 @@ i.fa-rotate:hover {
   background: white;
   width: 93%;
   padding: 15px;
-  border-radius: 0.4rem;
   font-size: 0.7em;
   font-size: 600;
   letter-spacing: 3px;
@@ -12946,7 +12943,6 @@ i.fa-rotate:hover {
   }
   #profile-sub-nav {
     width: 100%;
-    border-radius: 0.4rem;
     padding: 11.5px 7.5px;
     gap: 6px;
     margin-left: 0px !important;
@@ -13030,7 +13026,6 @@ input.focus-red:focus {
   width: 100%;
   max-width: 500px;
   padding: 32px;
-  border-radius: 0.4rem;
   margin-bottom: 1.5rem;
 }
 
@@ -13165,7 +13160,6 @@ main.swipe-members {
   max-width: 300px;
   width: 100%;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
-  border-radius: 0.4rem;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -13408,7 +13402,6 @@ input.groups-search__text::placeholder {
 .btn-groups-all {
   padding: 3px;
   background: white;
-  border-radius: 0.4rem;
   position: relative;
   margin-top: -5px;
 }
@@ -13530,7 +13523,6 @@ input.groups-search__text::placeholder {
 .groups-card {
   position: relative;
   width: 100%;
-  border-radius: 0.4rem;
   overflow: hidden;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
 }
@@ -13650,7 +13642,6 @@ input.groups-search__text::placeholder {
 
 .groups-card-activity {
   background: rgba(0, 0, 15, 0.05);
-  border-radius: 0.4rem;
   margin-top: 0.5rem;
   padding: 0.75rem;
   font-size: 13px;
@@ -13812,7 +13803,6 @@ input.members-search__text::placeholder {
 .btn-members-all {
   padding: 3px;
   background: white;
-  border-radius: 0.4rem;
   position: relative;
   margin-top: -5px;
 }
@@ -13929,7 +13919,6 @@ input.members-search__text::placeholder {
   width: 40px;
   margin-left: 20px;
   cursor: pointer;
-  border-radius: 0.4rem;
 }
 
 .members-model-toggler:hover::after {
@@ -13969,7 +13958,6 @@ input.members-search__text::placeholder {
 .members-card {
   position: relative;
   width: 100%;
-  border-radius: 0.4rem;
   overflow: hidden;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
 }
@@ -14085,7 +14073,6 @@ input.members-search__text::placeholder {
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
-  border-radius: 0.4rem;
 }
 
 .members-pagination-links a:hover {
@@ -14308,7 +14295,6 @@ div#item-header .profile-header__avatar {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  border-radius: 0.4rem;
 }
 
 #item-header img.avatar {
@@ -14454,51 +14440,6 @@ span.activity {
   width: 95% !important;
   padding-top: 5rem;
   padding-bottom: 2rem;
-}
-
-#profile-sub-nav {
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 0.4rem;
-  padding: 3px;
-  gap: 6px;
-  margin-left: 10px;
-}
-
-#profile-sub-nav a > span {
-  font-family: "Montserrat";
-  font-weight: 700;
-}
-
-#profile-sub-nav a > i {
-  font-size: 12px;
-  opacity: 0.5;
-}
-
-#profile-sub-nav a {
-  padding: 7.5px 10.5px;
-  font-family: "Montserrat";
-  font-weight: 700;
-  gap: 4px;
-  text-transform: none;
-  font-style: normal;
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #888491;
-  border-radius: 5px;
-  transition: all 0.3s;
-  min-height: 40px;
-}
-
-#profile-sub-nav a.active,
-#profile-sub-nav a.active i {
-  background: #ff6162;
-  color: white;
-  opacity: 1;
-}
-
-#profile-sub-nav a:not(.active):hover {
-  color: #ff6162;
 }
 
 #activity-filter-by {
@@ -14655,7 +14596,6 @@ i.fa-rotate:hover {
   background: white;
   width: 93%;
   padding: 15px;
-  border-radius: 0.4rem;
   font-size: 0.7em;
   font-size: 600;
   letter-spacing: 3px;
@@ -14779,17 +14719,6 @@ i.fa-rotate:hover {
   .activity-container .activity-btn {
     width: 100%;
   }
-  #profile-sub-nav {
-    width: 100%;
-    border-radius: 0.4rem;
-    padding: 11.5px 7.5px;
-    gap: 6px;
-    margin-left: 0px !important;
-  }
-  #profile-sub-nav a {
-    padding: 7.5px 10.5px;
-    gap: 12px;
-  }
   .profile-body-container {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -14905,7 +14834,6 @@ main.home-2 {
   padding-bottom: 1.25rem;
   padding-right: 2.1875rem;
   padding-left: 2.1875rem;
-  border-radius: 0.4rem;
   line-height: 1.25rem;
   border: 2px solid #ff6162;
   letter-spacing: 1.7px;
@@ -14947,7 +14875,6 @@ main.home-2 {
 
 .home-2-card {
   padding-bottom: 1.5rem;
-  border-radius: 0.4rem;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 15px 0px;
 }
@@ -15013,7 +14940,6 @@ main.home-2 {
 }
 
 .blog-post {
-  border-radius: 0.4rem;
   overflow: hidden;
   position: relative;
   height: 100%;
@@ -15083,7 +15009,7 @@ main.home-2 {
   width: 49px;
   z-index: 3;
   right: 10px;
-  top: 186px;
+  top: -91px;
 }
 
 .author__avater img {
@@ -15181,7 +15107,6 @@ main.home-2 {
   font-size: 12px;
   background: #ff6162;
   line-height: 1.25rem;
-  border-radius: 0.4rem;
   letter-spacing: 1.7px;
   padding: 16px 28px;
 }
@@ -15373,7 +15298,7 @@ form label {
 
 #item-header {
   z-index: 1;
-  margin-top: 70px !important;
+  margin-top: 70.36px !important;
   font-size: 15px;
 }
 
@@ -15443,6 +15368,14 @@ form label {
   display: none;
 }
 
+@media screen and (max-width: 991px) {
+  #item-header {
+    margin-top: 64.36px !important;
+  }
+  #header-bg-image {
+    margin-top: 64.36px;
+  }
+}
 @media screen and (max-width: 769px) {
   #content_nav .container {
     max-width: 100% !important;
