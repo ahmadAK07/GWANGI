@@ -1,10 +1,10 @@
 #hero-section{
     margin-top: 75.36px;
-    
 }
-#hero-section{
+.hero-activity__bg-image{
     background-image: url(https://community.gwangi-theme.com/wp-content/uploads/sites/2/2019/08/anthony-delanoix-15928-1850x550.jpg);
     background-repeat: no-repeat;
+    background-color:     rgba(56,51,71,0.5);
     background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -17,29 +17,260 @@
     border-bottom-width: 0;
     position: relative;
     z-index: 3;
-    height: 400px;
-}
-#hero-section::before{
-    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #ff6162;
+    width: 100%;
+}
+.hero-activity__bg-image::after{
     content: "";
     display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56,51,71,0.5);
+}
+.hero-activity__bg-color{
+    height: 100%;
+    width: 100%;
+    background: #ff6162;
     z-index: 2;
 }
-@media (min-width: 768px) {
+.hero-activity__content{
+    padding: 8.25% 0%;
+    z-index: 4;
+}
+.hero-activity__content .container, main.activity-main .container{ 
+    max-width: 1400px;
+    width: 100%;
+    padding: 0px 30px;
+}
+main.activity-main .container{
+    padding-top: calc(2vw + 15px);  
+}
+.activity-main .verified-badge{
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+.hero-activity__content h1{
+    margin: .5rem 0rem;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.hero-activity__content h2{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+ 
+// main starts here
+
+.btn-groups-all--activity{
+    width: fit-content;
+}
+.btn-groups-all--activity button::before{
+    margin-right: .1em;
+}
+.acivity-list{
+    padding-left: 65px;
+    margin-bottom: 1rem;
+}
+
+.acivity-list *{
+    word-break: break-all;
+}
+.activity-list__item{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
+    margin-bottom: 30px;
+    padding: 1.25rem;
+}
+.activity-item__user{
+    padding-left: 50px;
+}
+.activity-item__user--lg{
+    padding-left: 75px;
+}
+.activity-item__avatar{
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.activity-item__avatar--lg{
+    width: 80px;
+    max-width: 80px;
+}
+.activity-inner{
+    margin: 1rem 0;
+    padding-left: 75px;
+}
+.activity-inner p{
+    margin: 5px 0;
+    color: #888491;
+}
+.activity-item__content>*{
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #888491;
+    font-size: .95em;
+}
+.activity-item__content a{
+    color: black;
+}
+.activity-item__content a:hover{
+    color: #ff6162;
+}
+.activity-item-preview{
+    padding-left: 75px;
+    margin: 1rem 0;
+}
+.activity-item-preview__description *{
+    color: #888491;
+}
+.activity-item-preview__description img{
+    margin-bottom: .5rem;
+}
+.activity-item-preview__description p{
+    line-height: 1.5;
+    font-weight: 600;
+}
+.activity-item-preview__description button{
+    background: #ff6162;
+    border: 2px solid transparent;
+    padding: .5rem 1rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    font-size: .9em;
+}
+.activity-load-btn{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.04);
+    color: #888491;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: .7em;
+}
+@media screen and (max-width: 991px) {
     #hero-section{
+        margin-top: 64.36px;
+    }
+    .hero-activity__content{
+        padding: 40px 0%;
+    }
+    .hero-activity__content h1{
+        font-size: 2rem;
+    }
+    .hero-activity__content h2{
+        font-size: 1rem;
+    }
+    main.activity-main .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .btn-groups-all--activity{
+        width: 100%;
+    }
+    .activity-filer--activity div, .activity-filer--activity #activity-filter-by{
+      width: 100%;
+    }
+    .acivity-list{
+        padding-left: 0px;
+    }
+    .activity-item__user{
+        padding-left: 0px;
+    }
+    .activity-item__avatar{
+        top: 0px;
+        left: 0px;
+        width: 35px;
+        height: 35px;
+        min-height: 35px;
+        min-width: 35px;
+        position: relative;
+        margin-right: .75rem;
+    }
+    .activity-item-preview, .activity-inner{
+        padding-left: 0px;
+    }   
+    .activity-list__item{
+        padding: .7rem;
+    }
+}
+@media  screen and (max-width: 576px) {
+    .hero-activity__content h1{
+        font-size: 1.7778rem;
+    }
+}
+@media (min-width: 768px) {
+    .hero-activity__bg-image{
         margin-bottom: calc(0% - 4vw - 15px);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4vw));
     }
-    
-}
-@media (min-width: 768px) {
-    #hero-section::before {
-        margin-bottom: calc(0% - 4vw - 15px);
+    .hero-activity__bg-color{
+        margin-bottom: calc(0% - 4vw - 15px); /* Keeping the margin-bottom the same, as it's based on the same calculation */
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%);
-    }
+    }   
+    .acivity-list::before{
+        content: "";
+        background: #888491;
+        position: absolute;
+        left: 34px;
+        display: block;
+        width: 2px;
+        height: 100%;
+        top: 0;
+        opacity: .1;
+        border-radius: 500px;
+     }
+     .activity-list__item::before, .activity-list__item::after{
+        position: absolute;
+        transition: all 0.2s ease-in-out;
+        z-index: 1;
+        transform: translate3d(0, 0, 0);
+     } 
+     .activity-list__item::before{
+          background-color: #888491;
+          content: "";
+          border-color: #f0ebeb;
+          display: block;
+          width: 14px;
+          height: 14px;
+          border: 5px solid #f0ebeb;
+          top: 5px;
+          left: -38px;
+          border-radius: 500px;
+          transform-origin: center center;
+     }
+     .activity-list__item::after{
+        content: attr(data-icon);
+        left: -64px;
+        top: -3px;
+        font-family: "gwangi";
+        font-weight: 100;
+        font-style: normal;
+        text-rendering: auto;
+        font-size: .9em;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+        opacity: .7;
+     }
+     .activity-list__item:hover::after{
+        color: #ff6162;
+        opacity: 1;
+     }
+     .activity-list__item:hover::before{
+        background-color: #ff6162;
+        transform: scale(1.4);
+     }
+     
 }
