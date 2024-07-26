@@ -1,5 +1,6 @@
-$bg-primary: #ff6162;
+
 $rounded-3: .4rem;
+$danger: #ff6162;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./nav/nav";
@@ -24,6 +25,10 @@ $rounded-3: .4rem;
 .montserrat-700{
   font-family: "Montserrat";
   font-weight: 700;
+}
+.montserrat-700{
+  font-family: "Montserrat";
+  font-weight: 600;
 }
 h3.lead{
   margin-top: 2%;
