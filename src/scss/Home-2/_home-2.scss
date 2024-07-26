@@ -5,12 +5,6 @@ main.home-2 {
   padding: 10% 0%;
   background: white;
 }
-.home-2 .container {
-  max-width: 1400px;
-  width: 100%;
-  padding-left: clamp(25px, 3vw, 60px);
-  padding-right: clamp(25px, 3vw, 60px);
-}
 .home-2-hero .col-md-7 {
   transform: translate3d(0px, 13px, 0px);
 }
@@ -49,26 +43,26 @@ main.home-2 {
   border: 2px solid #ff6162;
   letter-spacing: 1.7px;
 }
-.home-2-members,
+.home-members,
 .home-2-blog {
   padding: 4% 0%;
   background-color: #f0ebeb;
 }
 
 // end of hero section
-.home-2-members {
+.home-members {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
-.home-2-members__title,
-.home-2-members__title span {
+.home-members__title,
+.home-members__title span {
   font-size: 2rem;
   color: #2a2733;
   font-family: "Montserrat";
   font-weight: 700;
 }
 
-.home-2-members__header h3,
+.home-members__header h3,
 .home-2-social__header h3 {
   margin-top: 2%;
   font-size: 1.2rem;
@@ -77,12 +71,12 @@ main.home-2 {
   line-height: 1.5;
 }
 
-.home-2-members__body,
+.home-members__body,
 .home-2-blog__body,
 .home-2-social__body {
   margin-top: 4%;
 }
-.home-2-members__body li {
+.home-members__body li {
   max-width: 20%;
   width: 100%;
 }
@@ -379,14 +373,14 @@ main.home-2 {
   .home-2-hero__text {
     margin-top: 25px;
   }
-  .home-2-members__header h3,
-  .home-2-members__body,
+  .home-members__header h3,
+  .home-members__body,
   .home-2-blog__body,
   .home-2-social__header h3 {
     margin-top: 25px;
     
   }
-  .home-2-members__body li {
+  .home-members__body li {
     max-width: 33.333%;
   }
   .home-2-blog__body li {
@@ -398,11 +392,11 @@ main.home-2 {
 }
 @media screen and (max-width: 769px) {
   .home-2-hero,
-  .home-2-members,
+  .home-members,
   .home-2-blog {
     padding: 50px 0px;
   }
-  .home-2-members__body li {
+  .home-members__body li {
     max-width: 50%;
   }
   .home-2-blog__body li {
@@ -422,7 +416,7 @@ main.home-2 {
   .home-2-hero__title, .home-2-social__title {
     font-size: calc((3.2rem) / 1.8);
   }
-  .home-2-members__body li {
+  .home-members__body li {
     max-width: 100%;
   }
   .home-2-social__menu li {
