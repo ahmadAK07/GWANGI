@@ -1,4 +1,4 @@
-
+$black: #2a2733;
 $rounded-3: .4rem;
 $danger: #ff6162;
 
@@ -19,16 +19,30 @@ $danger: #ff6162;
   box-sizing: border-box;
   transition: all 0.3s;
 }
+img{
+  object-fit: cover;
+  object-position: center;
+}
+.text-gray-1{
+   color: #888491;
+}
 .transition-3 {
   transition: all 0.3s;
+}
+.transition-2 {
+  transition: all 0.2s;
 }
 .montserrat-700{
   font-family: "Montserrat";
   font-weight: 700;
 }
-.montserrat-700{
+.montserrat-600{
   font-family: "Montserrat";
   font-weight: 600;
+}
+.montserrat-600{
+  font-family: "Montserrat";
+  font-weight: 400;
 }
 h3.lead{
   margin-top: 2%;
@@ -170,6 +184,9 @@ form label {
   }
   h3.lead{
     margin-top: 25px;
+  }
+  .home-2 .container , .home .container{
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 769px) {
