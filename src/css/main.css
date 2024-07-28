@@ -15807,6 +15807,11 @@ main.home {
   border-bottom: 20px solid #ff6162;
 }
 
+.home section {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
 .section-6__header h3, .section-6__header .h3 {
   font-weight: 400;
   font-size: 1.2rem;
