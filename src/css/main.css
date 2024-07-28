@@ -14764,7 +14764,7 @@ i.fa-rotate:hover {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(56, 51, 71, 0.6);
+  background-color: rgba(56, 51, 71, 0.5);
 }
 
 .hero-activity__bg-color {
@@ -15562,7 +15562,6 @@ main.home {
 }
 
 .home-hero__form {
-  margin-top: 10px;
   font-size: 16px;
 }
 
@@ -15577,12 +15576,12 @@ main.home {
 .home-form__range select,
 #select-passion {
   background-color: rgba(0, 0, 0, 0.08);
-  padding: 12.8px 20px;
+  padding: 0.8rem 1.25rem;
   border: 2px solid transparent;
   color: #888491;
   line-height: 1.25;
   outline: none;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .home-form__name:hover,
@@ -15598,7 +15597,7 @@ main.home {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .col {
@@ -15644,6 +15643,11 @@ main.home {
   text-transform: uppercase;
   font-weight: 600;
   border: 2px solid transparent;
+}
+
+.home .home-members {
+  padding-top: 7%;
+  padding-bottom: 5%;
 }
 
 .home ins {
@@ -15773,6 +15777,7 @@ main.home {
   font-size: 1.1em;
   font-weight: 400;
   line-height: 1.5;
+  color: #f0ebeb;
 }
 
 .divider-shape {
@@ -15808,7 +15813,6 @@ main.home {
 }
 
 .home section {
-  margin-left: -10px;
   margin-right: -10px;
 }
 
@@ -15858,6 +15862,7 @@ main.home {
 
 .section-6__item a:hover .section-6__item__title {
   padding-bottom: 2rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.8) 100%);
 }
 
 .section-6__item__title {
@@ -15891,7 +15896,6 @@ main.home {
   letter-spacing: 0;
   transform: translateY(-15px);
   transition: all 0.2s ease-in-out;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.09) 40%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 .section-7__content {
@@ -16025,7 +16029,7 @@ main.home {
 }
 
 .section-9-card {
-  padding: 4rem;
+  padding: 5.25rem 4rem;
   background-color: rgba(61, 64, 74, 0.7);
 }
 
@@ -16060,6 +16064,9 @@ main.home {
   }
   .home-hero__body {
     margin-top: 4%;
+  }
+  .home-hero__subtitle {
+    font-size: 1rem;
   }
   .section-2__body,
   .section-3__text,
