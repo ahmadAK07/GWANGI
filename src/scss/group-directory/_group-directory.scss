@@ -16,8 +16,6 @@ main.group-directory {
   outline: none;
 }
 input.groups-search__text {
-  font-family: "Montserrat";
-  font-weight: 700;
   padding: 0.5rem 0.75rem 0.5rem 30px;
   background: transparent;
   border-bottom: 2px solid transparent;
@@ -43,8 +41,6 @@ input.groups-search__text::placeholder {
   display: none;
   padding: 10px 23px;
   cursor: pointer;
-  font-family: "Montserrat";
-  font-weight: 700;
 }
 .item:hover {
     color: white;
@@ -91,8 +87,6 @@ input.groups-search__text::placeholder {
   outline: none;
   background: transparent;
   color: rgb(136, 132, 145);
-  font-family: "Montserrat";
-  font-weight: 700;
   font-size: 0.9em;
   padding: 0.5rem 0.7rem;
   line-height: 21.6px;
@@ -260,8 +254,6 @@ input.groups-search__text::placeholder {
   margin-bottom: 5px;
   font-size: 1em;
   line-height: 1.2;
-  font-family: "Montserrat";
-  font-weight: 700;
   text-align: center;
 }
 .groups-card__title a {

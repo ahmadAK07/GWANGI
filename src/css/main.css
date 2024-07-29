@@ -12400,8 +12400,6 @@ footer .footer-bottom {
 
 .user-nicename-small {
   font-size: 50%;
-  font-weight: 400;
-  font-family: "Montserrat";
 }
 
 .user-nicename,
@@ -12530,9 +12528,7 @@ div#item-header .profile-header__avatar {
 }
 #item-header .profile-header__body {
   position: static;
-  font-family: Montserrat;
   text-transform: none;
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -12596,7 +12592,6 @@ div#item-header .profile-header__avatar {
   overflow: hidden;
   pointer-events: none;
   max-width: 500px;
-  font-family: var(--grimlock-text-font-family);
   transition: all 0.2s ease-in-out;
 }
 
@@ -12638,11 +12633,6 @@ span.activity {
   margin-left: 10px;
 }
 
-#profile-sub-nav a > span {
-  font-family: "Montserrat";
-  font-weight: 700;
-}
-
 #profile-sub-nav a > i {
   font-size: 12px;
   opacity: 0.5;
@@ -12650,8 +12640,6 @@ span.activity {
 
 #profile-sub-nav a {
   padding: 7.5px 10.5px;
-  font-family: "Montserrat";
-  font-weight: 700;
   gap: 4px;
   text-transform: none;
   font-style: normal;
@@ -12677,8 +12665,6 @@ span.activity {
 #activity-filter-by {
   border: none;
   background: transparent;
-  font-weight: 700;
-  font-family: "Montserrat";
   font-size: 0.9em;
   height: 45px;
   width: 152px;
@@ -12801,17 +12787,13 @@ i.fa-rotate:hover {
 .activity-container .profile-activity p {
   font-size: 0.95em;
   color: #888491;
-  font-family: "Montserrat";
-  font-weight: 700;
 }
 
 .activity-container .profile-activity span {
-  font-weight: 400;
   font-size: 85%;
   transition: all 0.2s ease-in-out;
   color: #888491;
   opacity: 0.7;
-  font-family: "Montserrat";
 }
 
 .activity-container .activity-btn {
@@ -12832,67 +12814,6 @@ i.fa-rotate:hover {
   background-repeat: no-repeat;
 }
 
-#join-community {
-  padding: 9%;
-  background: rgba(255, 97, 98, 0.92);
-  font-size: 15px;
-}
-
-#join-community h2, #join-community .h2 {
-  font-size: 35.25px;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
-  background: transparent;
-}
-
-#join-community h2::after, #join-community .h2::after {
-  background: none !important;
-  content: "\e943";
-  font-family: "gwangi";
-  color: rgba(0, 0, 0, 0.7);
-  color: white !important;
-  height: auto;
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  z-index: 1;
-  font-size: 0.8em;
-  opacity: 0.4;
-}
-
-#join-community p {
-  font-size: 1.2rem;
-  font-family: "Poppins";
-  font-weight: 400;
-}
-
-#join-community h2, #join-community .h2 {
-  font-weight: 700;
-  font-family: "Montserrat";
-}
-
-#join-community .custom-register-btn {
-  background: #f0ebeb;
-  width: 256px;
-  font-family: "Poppins";
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-weight: 500;
-  color: rgba(255, 97, 98, 0.9215686275);
-  font-size: 0.9em;
-  transition: all 0.3s;
-}
-
-#join-community .custom-register-btn:hover {
-  opacity: 0.7;
-}
-
 @media screen and (max-width: 1200px) {
   .custom-profile-container {
     padding: 30px 0;
@@ -12911,9 +12832,6 @@ i.fa-rotate:hover {
   }
 }
 @media screen and (max-width: 991px) {
-  #join-community h2, #join-community .h2 {
-    font-size: 27.115px;
-  }
   #header-bg-image {
     margin-top: -7.4px;
   }
@@ -12924,13 +12842,6 @@ i.fa-rotate:hover {
     padding-right: 25px;
     margin-left: auto !important;
     margin-right: auto !important;
-  }
-  #join-community h2, #join-community .h2 {
-    font-size: 1.8076923077rem;
-  }
-  #join-community p {
-    font-size: 0.8rem;
-    text-align: center;
   }
   .activity-container .profile-activity {
     width: 100%;
@@ -12959,11 +12870,6 @@ i.fa-rotate:hover {
     padding-bottom: 1rem;
   }
 }
-@media screen and (max-width: 576px) {
-  #join-community h2, #join-community .h2 {
-    font-size: 6vw;
-  }
-}
 input {
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -12982,33 +12888,32 @@ main.register {
   padding-right: 30px;
 }
 
-.regsiter-list {
+.register-list {
   margin-bottom: 24px;
 }
 
-.regsiter-list li {
+.register-list li {
   font-size: 3em;
   line-height: 72px;
   height: 72px;
 }
 
-.regsiter-list a {
+.register-list a {
   border-width: 2px;
   display: block;
   font-size: 0.75em;
   font-weight: 700;
-  color: #ff6162;
   position: relative;
   padding: 0.3rem 0;
   letter-spacing: 0.5px;
   border-width: 2px solid transparent;
 }
 
-.regsiter-list a span {
+.register-list a span {
   line-height: 20px;
 }
 
-.regsiter-list a::after {
+.register-list a::after {
   content: "";
   position: relative;
   bottom: 0;
@@ -13043,7 +12948,6 @@ input.focus-red:focus {
 }
 
 .alert-primary {
-  background: #ff6162;
   color: #fff;
 }
 
@@ -13088,7 +12992,6 @@ input.focus-red:focus {
 }
 
 .login-form .login-submit input {
-  background: #ff6162;
   border: 2px solid #ff6162;
   letter-spacing: 1.7px;
   color: white;
@@ -13114,7 +13017,7 @@ input.focus-red:focus {
   main.register {
     margin-top: 64.36px;
   }
-  .regsiter-list a {
+  .register-list a {
     font-size: 0.5em;
   }
 }
@@ -13147,8 +13050,6 @@ main.swipe-members {
 .swipe-header h1, .swipe-header .h1 {
   font-size: 3.2rem;
   line-height: 1.2;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   letter-spacing: 0;
   color: #3b354d;
   margin-bottom: 0.5rem;
@@ -13341,8 +13242,6 @@ main.group-directory {
 }
 
 input.groups-search__text {
-  font-family: "Montserrat";
-  font-weight: 700;
   padding: 0.5rem 0.75rem 0.5rem 30px;
   background: transparent;
   border-bottom: 2px solid transparent;
@@ -13377,8 +13276,6 @@ input.groups-search__text::placeholder {
   display: none;
   padding: 10px 23px;
   cursor: pointer;
-  font-family: "Montserrat";
-  font-weight: 700;
 }
 
 .item:hover {
@@ -13430,8 +13327,6 @@ input.groups-search__text::placeholder {
   outline: none;
   background: transparent;
   color: rgb(136, 132, 145);
-  font-family: "Montserrat";
-  font-weight: 700;
   font-size: 0.9em;
   padding: 0.5rem 0.7rem;
   line-height: 21.6px;
@@ -13616,8 +13511,6 @@ input.groups-search__text::placeholder {
   margin-bottom: 5px;
   font-size: 1em;
   line-height: 1.2;
-  font-family: "Montserrat";
-  font-weight: 700;
   text-align: center;
 }
 
@@ -13742,8 +13635,6 @@ main.members {
 }
 
 input.members-search__text {
-  font-family: "Montserrat";
-  font-weight: 700;
   padding: 0.5rem 0.75rem 0.5rem 30px;
   background: transparent;
   border-bottom: 2px solid transparent;
@@ -13778,8 +13669,6 @@ input.members-search__text::placeholder {
   display: none;
   padding: 10px 23px;
   cursor: pointer;
-  font-family: "Montserrat";
-  font-weight: 700;
 }
 
 .item:hover {
@@ -13831,8 +13720,6 @@ input.members-search__text::placeholder {
   outline: none;
   background: transparent;
   color: rgb(136, 132, 145);
-  font-family: "Montserrat";
-  font-weight: 700;
   font-size: 0.9em;
   padding: 0.5rem 0.7rem;
   line-height: 21.6px;
@@ -14188,12 +14075,6 @@ input.members-search__text::placeholder {
   background-image: linear-gradient(15deg, rgba(255, 97, 98, 0.38) 50%, transparent 100%);
 }
 
-.user-nicename-small {
-  font-size: 50%;
-  font-weight: 400;
-  font-family: "Montserrat";
-}
-
 .user-nicename,
 .bp-member-xprofile-custom-fields > * {
   font-family: "Montserrat";
@@ -14221,15 +14102,11 @@ div#item-header .profile-header__avatar {
 
 .groups-header__body p {
   font-size: 0.9em;
-  font-weight: 400;
-  font-family: "Montserrat";
   color: white;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 .groups-header__body span {
-  font-weight: 700;
-  font-family: "Montserrat";
   font-size: 1rem;
 }
 
@@ -14341,9 +14218,7 @@ div#item-header .profile-header__avatar {
 }
 #item-header .groups-header__body {
   position: static;
-  font-family: Montserrat;
   text-transform: none;
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -14448,8 +14323,6 @@ span.activity {
 #activity-filter-by {
   border: none;
   background: transparent;
-  font-weight: 700;
-  font-family: "Montserrat";
   font-size: 0.9em;
   height: 45px;
   width: 152px;
@@ -14587,12 +14460,10 @@ i.fa-rotate:hover {
 }
 
 .activity-container .profile-activity span {
-  font-weight: 400;
   font-size: 85%;
   transition: all 0.2s ease-in-out;
   color: #888491;
   opacity: 0.7;
-  font-family: "Montserrat";
 }
 
 .activity-container .activity-btn {
@@ -14613,67 +14484,6 @@ i.fa-rotate:hover {
   background-repeat: no-repeat;
 }
 
-#join-community {
-  padding: 9%;
-  background: rgba(255, 97, 98, 0.92);
-  font-size: 15px;
-}
-
-#join-community h2, #join-community .h2 {
-  font-size: 35.25px;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
-  background: transparent;
-}
-
-#join-community h2::after, #join-community .h2::after {
-  background: none !important;
-  content: "\e943";
-  font-family: "gwangi";
-  color: rgba(0, 0, 0, 0.7);
-  color: white !important;
-  height: auto;
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  z-index: 1;
-  font-size: 0.8em;
-  opacity: 0.4;
-}
-
-#join-community p {
-  font-size: 1.2rem;
-  font-family: "Poppins";
-  font-weight: 400;
-}
-
-#join-community h2, #join-community .h2 {
-  font-weight: 700;
-  font-family: "Montserrat";
-}
-
-#join-community .custom-register-btn {
-  background: #f0ebeb;
-  width: 256px;
-  font-family: "Poppins";
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-weight: 500;
-  color: rgba(255, 97, 98, 0.9215686275);
-  font-size: 0.9em;
-  transition: all 0.3s;
-}
-
-#join-community .custom-register-btn:hover {
-  opacity: 0.7;
-}
-
 @media screen and (max-width: 1200px) {
   .custom-profile-container {
     padding: 30px 0;
@@ -14689,9 +14499,6 @@ i.fa-rotate:hover {
   }
 }
 @media screen and (max-width: 991px) {
-  #join-community h2, #join-community .h2 {
-    font-size: 27.115px;
-  }
   #header-bg-image {
     margin-top: -7.4px;
   }
@@ -14702,13 +14509,6 @@ i.fa-rotate:hover {
     padding-right: 25px;
     margin-left: auto !important;
     margin-right: auto !important;
-  }
-  #join-community h2, #join-community .h2 {
-    font-size: 1.8076923077rem;
-  }
-  #join-community p {
-    font-size: 0.8rem;
-    text-align: center;
   }
   .activity-container .profile-activity {
     width: 100%;
@@ -14728,11 +14528,6 @@ i.fa-rotate:hover {
   }
   #content_nav ul.groups-content-nav {
     height: 140px;
-  }
-}
-@media screen and (max-width: 576px) {
-  #join-community h2, #join-community .h2 {
-    font-size: 6vw;
   }
 }
 #hero-section {
@@ -14799,8 +14594,6 @@ main.activity-main .container {
   margin: 0.5rem 0rem;
   font-size: 3.2rem;
   line-height: 1.2;
-  font-family: "Montserrat";
-  font-weight: 700;
 }
 
 .hero-activity__content h2, .hero-activity__content .h2 {
@@ -15152,12 +14945,13 @@ main.home-2 {
 }
 
 .home-2-card__name {
-  color: #2a2733;
-  font-family: "Montserrat";
-  font-weight: 700;
   font-size: 1rem;
   padding: 0px 0.7rem;
   margin-bottom: 0.5rem;
+}
+
+.home-2-card__name:hover {
+  color: #ff6162 !important;
 }
 
 .home-2-card__meta {
@@ -16258,8 +16052,6 @@ form label {
 
 #content_nav a {
   position: relative;
-  font-family: "Montserrat";
-  font-weight: 700;
   display: block;
   padding: 27px 13px;
   color: black;
@@ -16275,7 +16067,6 @@ form label {
   height: 33px;
   width: 33px;
   border: 5px solid #f0ebeb;
-  background: #ff6162;
   color: white;
   border-radius: 50%;
   bottom: -13px;
@@ -16291,7 +16082,7 @@ form label {
   width: 0%;
   left: 0;
   bottom: 0;
-  background: rgb(233, 14, 14);
+  background: #ff6162;
   transition: all 0.2s;
   font-weight: 700;
   font-size: 0.9em;
@@ -16318,6 +16109,67 @@ form label {
   display: none;
 }
 
+#join-community {
+  padding: 9%;
+  background: rgba(255, 97, 98, 0.92);
+  font-size: 15px;
+}
+
+#join-community h2, #join-community .h2 {
+  font-size: 35.25px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  background: transparent;
+}
+
+#join-community h2::after, #join-community .h2::after {
+  background: none !important;
+  content: "\e943";
+  font-family: "gwangi";
+  color: rgba(0, 0, 0, 0.7);
+  color: white !important;
+  height: auto;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  z-index: 1;
+  font-size: 0.8em;
+  opacity: 0.4;
+}
+
+#join-community p {
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+#join-community h2, #join-community .h2 {
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+#join-community .custom-register-btn {
+  background: #f0ebeb;
+  width: 256px;
+  font-family: "Poppins";
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  color: rgba(255, 97, 98, 0.9215686275);
+  font-size: 0.9em;
+  transition: all 0.3s;
+}
+
+#join-community .custom-register-btn:hover {
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 991px) {
   #item-header {
     margin-top: 64.36px !important;
@@ -16330,6 +16182,9 @@ form label {
   }
   .home-2 .container, .home .container {
     max-width: 100%;
+  }
+  #join-community h2, #join-community .h2 {
+    font-size: 27.115px;
   }
 }
 @media screen and (max-width: 769px) {
@@ -16372,8 +16227,6 @@ form label {
     border-width: 3px !important;
   }
   .profile-content-nav-toggler span {
-    font-weight: 700;
-    font-family: "Montserrat";
     letter-spacing: 2px;
   }
   .profile-content-nav-toggler {
@@ -16412,9 +16265,19 @@ form label {
   #content_nav .links {
     height: 200.9px;
   }
+  #join-community h2, #join-community .h2 {
+    font-size: 1.8076923077rem;
+  }
+  #join-community p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 576px) {
   #content_nav li {
     width: 100%;
+  }
+  #join-community h2, #join-community .h2 {
+    font-size: 6vw;
   }
 }/*# sourceMappingURL=main.css.map */

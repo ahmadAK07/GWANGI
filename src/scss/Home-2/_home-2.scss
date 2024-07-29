@@ -96,12 +96,12 @@ main.home-2 {
   margin-bottom: 1.5rem;
 }
 .home-2-card__name {
-  color: #2a2733;
-  font-family: "Montserrat";
-  font-weight: 700;
   font-size: 1rem;
   padding: 0px 0.7rem;
   margin-bottom: 0.5rem;
+}
+.home-2-card__name:hover{
+  color: #ff6162 !important;
 }
 .home-2-card__meta {
   padding: 0px 0.7rem 0.75rem;

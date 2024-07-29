@@ -1532,6 +1532,23 @@
         © 2024 GWANGI. All rights reserved.
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script>
+      let sub_menu = document.getElementById("sub-menu");
+      let nav_toggler = document.getElementById("nav-toggler");
+
+      nav_toggler.addEventListener("click", () => {
+    if (sub_menu.classList.contains("h-0")) {
+        sub_menu.classList.remove("h-0");
+        sub_menu.classList.add("h-95vh");
+        nav_toggler.classList.add("toggled");
+        document.body.style.overflow = "hidden";
+    } else {
+        sub_menu.classList.remove("h-95vh");
+        sub_menu.classList.add("h-0");
+        nav_toggler.classList.remove("toggled");
+        document.body.style.overflow = "";
+    }
+});
+    </script>
   </body>
 </html>
