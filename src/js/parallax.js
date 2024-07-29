@@ -3,7 +3,7 @@
 var image = document.querySelectorAll(".image-parallax");
 // new simpleParallax(image[0], {
 //     orientation:"right"
-import SimpleParallax from "../../node_modules/simple-parallax-js/dist/vanilla/simpleParallaxVanilla.es.js";
+import SimpleParallax from "./vanilla/simpleParallaxVanilla.es.js";
 
 image.forEach((img)=>{
     new SimpleParallax(img)
