@@ -1028,7 +1028,7 @@
 
       <!-- section-3 -->
 
-      <section class="section-3 position-relative">
+      <section class="section-3 position-relative" style="overflow: hidden;">
         <div class="container" >
           <div class="row" style="margin: 0px -15px;">
               <div class="col-md-5 d-flex align-items-center" style="padding: 0px 15px;">
@@ -1061,9 +1061,9 @@
              </div>
 
               </div>
-              <div class="col-md-7" style="padding: 0px 34px;">
-                <div class="section-3__image w-100 h-100">
-                      <img src="./Images/home-section-3.png" width="100%" alt="">
+              <div  class="col-md-7" style="padding: 0px 34px;">
+                <div class="section-3__image image-parallax w-100 h-100 d-flex justify-content-center align-items-center">
+                      <img src="./Images/home-section-3.png" width="80%" alt="">
                 </div>
               </div>
           </div>
@@ -1073,12 +1073,12 @@
       </section>
 
       <!-- section-4 -->
-      <section class="section-4  position-relative bg-danger" style="margin-top: -10vw;">
+      <section class="section-4  position-relative bg-danger" style="margin-top: -10vw;overflow: hidden;">
         <div class="container">
           <div class="row justify-content-end" style="margin: 0px -15px;">
             <div class="col-md-7" style="padding: 0px 30px;">
-              <div class="section-3__image w-100 h-100 d-flex justify-content-md-center">
-                    <img src="./Images/home-2-hero-pic.png" width="97%" height="100%" alt="">
+              <div class="section-3__image image-parallax w-100 h-100 d-flex justify-content-md-center">
+                    <img src="./Images/home-2-hero-pic.png" width="80%" alt="">
               </div>
             </div>
               <div class="col-md-5 d-flex align-items-center" style="padding: 0px 15px;">
@@ -1532,6 +1532,7 @@
         © 2024 GWANGI. All rights reserved.
       </div>
     </footer>
+    <script src="./js/parallax.js" type="module"></script>
     <script>
       let sub_menu = document.getElementById("sub-menu");
       let nav_toggler = document.getElementById("nav-toggler");
