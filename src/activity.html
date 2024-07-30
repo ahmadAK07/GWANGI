@@ -21,7 +21,7 @@
     </style>
     <title>Gwangi</title>
   </head>
-  <body style="background-color: rgb(240, 235, 235);">
+  <body style="background-color: rgb(240, 235, 235)">
     <header>
       <nav>
         <div
@@ -369,40 +369,41 @@
         </div>
       </nav>
 
-      <div id="hero-section" class=" position-relative">
-        <div class="hero-activity__bg-color position-absolute top-0 left-0"></div>
-         <div class="hero-activity__bg-image position-absolute top-0 left-0"></div>
-         <div class="hero-activity__content position-relative">
-               <div class="container">
-                <div class="row text-white">
-                   <h1 class="montserrat-700">Activity</h1>
-                   <h2 class="mb-0">Phasellus leo dolor, tempus non</h2>
-                </div>
-               </div>
-         </div>
+      <div id="hero-section" class="position-relative">
+        <div
+          class="hero-activity__bg-color position-absolute top-0 left-0"
+        ></div>
+        <div
+          class="hero-activity__bg-image position-absolute top-0 left-0"
+        ></div>
+        <div class="hero-activity__content position-relative">
+          <div class="container">
+            <div class="row text-white">
+              <h1 class="montserrat-700">Activity</h1>
+              <h2 class="mb-0">Phasellus leo dolor, tempus non</h2>
+            </div>
+          </div>
+        </div>
       </div>
-
-
-
     </header>
 
-    <main class="activity-main pb-5" >
-        <div class="container">
-          <div class="row my-4 ">
-             <div class="col-md-6">     
-                <div class="btn-groups-all btn-groups-all--activity  rounded-3">
-                  <button class="transition-3">
-                    All Members
-                    <span class="transition-3">31</span>
-                  </button>
-                </div>
-             </div>
-             <div class="col-md-6">
-              <div
-              class="activity-filer activity-filer--activity  d-flex justify-content-md-end justify-content-start align-items-center position-relative"
+    <main class="activity-main pb-5">
+      <div class="container">
+        <div class="row my-4">
+          <div class="col-md-6">
+            <div class="btn-groups-all btn-groups-all--activity rounded-3">
+              <button class="transition-3 montserrat-700">
+                All Members
+                <span class="transition-3">31</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="activity-filer activity-filer--activity d-flex justify-content-md-end justify-content-start align-items-center position-relative"
             >
               <label for="activity-filter-by">
-                <select id="activity-filter-by" style="width: 152px">
+                <select id="activity-filter-by" class="montserrat-700" style="width: 152px">
                   <option value="-1">— Everything —-</option>
                   <option value="activity_update">Updates</option>
                   <option value="rtmedia_update">Media Updates</option>
@@ -420,256 +421,613 @@
                 <div class="position-absolute"></div>
               </label>
             </div>
-             </div>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="col-12">
-                <div class="p-0 pt-md-2 mb-4">
-                  <ul class="acivity-list mt-0 position-relative list-unstyled">
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe915;">
-                      <div class="activity-item__user pr-md-5 d-flex w-100">
-                       <div class="activity-item__avatar">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/swipe-members/swipe-card-3.png" alt="">
+        <div class="row">
+          <div class="col-12">
+            <div class="p-0 pt-md-2 mb-4">
+              <ul class="acivity-list mt-0 position-relative list-unstyled">
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe915;"
+                >
+                  <div class="activity-item__user pr-md-5 d-flex w-100">
+                    <div class="activity-item__avatar">
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/swipe-members/swipe-card-3.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none">Kemly Jones</a>
+                        liked
+                        <a href="#" class="text-decoration-none">Kemly Jones</a
+                        >'s <a href="#" class="text-decoration-none">Photo</a>
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >6 months ago</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe925;"
+                >
+                  <div class="activity-item__user pr-md-5 d-flex w-100">
+                    <div class="activity-item__avatar">
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/swipe-members/swipe-card-3.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none"
+                          >Scott Pringston
+                          <span class="verified-badge text-center"
+                            ><i class="fa-solid fa-check"></i
+                          ></span>
                         </a>
-                       </div>
-
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">Kemly Jones</a> liked <a href="#" class="text-decoration-none">Kemly Jones</a>'s <a href="#" class="text-decoration-none">Photo</a> </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">6 months ago</a> 
-                      </div>
-                        
-                      </div>
-                     </li>
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe925;">
-                      <div class="activity-item__user pr-md-5 d-flex  w-100">
-                       <div class="activity-item__avatar">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/swipe-members/swipe-card-3.png" alt="">
+                        changed their profile picture
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >7 months ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-item-preview">
+                    <div class="activity-item-preview__cover">
+                      <a href="#">
+                        <img
+                          src="./Images/activity-prevew-cover.jpg"
+                          class="rounded-3"
+                          width="100%"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="activity-item-preview__description w-100 text-center"
+                    >
+                      <div
+                        style="width: 200px; margin-top: -75px"
+                        class="mx-auto"
+                      >
+                        <a href="#" class="border-white border">
+                          <img
+                            src="./Images/activity-profile-pic.jpg"
+                            width="100%"
+                            style="
+                              border-radius: 500px;
+                              border: 8px solid white;
+                            "
+                            alt=""
+                          />
                         </a>
-                       </div>
+                      </div>
+                      <a href="#" class="text-decoration-none"
+                        ><p style="margin: 5px 0px">Scott Pringston</p></a
+                      >
+                      <a href="#" class="text-decoration-none"
+                        ><p style="margin: 5px 0px" class="fw-normal">
+                          @demo
+                        </p></a
+                      >
+                      <button
+                        style="font-weight: 600"
+                        class="rounded-3 text-white"
+                      >
+                        VIEW PROFILE
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe915;"
+                >
+                  <div class="activity-item__user pr-md-5 d-flex w-100">
+                    <div class="activity-item__avatar">
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/swipe-members/swipe-card-3.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
 
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">Scott Pringston 
-                           <span class="verified-badge text-center"
-                          ><i class="fa-solid fa-check"></i
-                        ></span>
-                       </a> changed their profile picture </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">7 months ago</a>
-                      </div>
-                     
-                      </div>
-                      <div class="activity-item-preview">
-                        <div class="activity-item-preview__cover">
-                         <a href="#">
-                           <img src="./Images/activity-prevew-cover.jpg" class="rounded-3" width="100%" alt="">
-                         </a>
-                        </div>
-                         <div class="activity-item-preview__description w-100 text-center">
-                              <div style="width: 200px;margin-top: -75px;" class="mx-auto">
-                                   <a href="#" class="border-white border">
-                                     <img src="./Images/activity-profile-pic.jpg" width="100%" style="border-radius: 500px;border: 8px solid white;" alt="">
-                                   </a>
-                              </div>
-                              <a href="#" class="text-decoration-none"><p style="margin: 5px 0px;">Scott Pringston</p></a>
-                              <a href="#" class="text-decoration-none"><p style="margin: 5px 0px;" class="fw-normal">@demo</p></a>
-                              <button style="font-weight: 600;" class="rounded-3 text-white">VIEW PROFILE</button>
-                         </div>
-                       </div>
-                     </li>
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe915;">
-                      <div class="activity-item__user pr-md-5 d-flex  w-100">
-                       <div class="activity-item__avatar">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/swipe-members/swipe-card-3.png" alt="">
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none"
+                          >Scott Pringston
+                          <span class="verified-badge text-center"
+                            ><i class="fa-solid fa-check"></i
+                          ></span>
                         </a>
-                       </div>
-
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">Scott Pringston 
-                           <span class="verified-badge text-center"
-                          ><i class="fa-solid fa-check"></i
-                        ></span>
-                       </a> changed their profile picture </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">7 months ago</a>
-                      </div>
-                     
-                      </div>
-                      <div class="activity-item-preview">
-                        <div class="activity-item-preview__cover">
-                         <a href="#">
-                           <img src="./Images/groups/groups-card-1.jpg" class="rounded-3" width="100%" alt="">
-                         </a>
-                        </div>
-                         <div class="activity-item-preview__description w-100 text-center">
-                              <div style="width: 200px;margin-top: -75px;" class="mx-auto">
-                                   <a href="#" class="border-white border">
-                                     <img src="./Images/groups/groups-card-1-logo.jpg" width="100%" style="border-radius: 500px;border: 8px solid white;" alt="">
-                                   </a>
-                              </div>
-                              <a href="#" class="text-decoration-none"><p style="margin: 5px 0px;">Scott Pringston</p></a>
-                              <button style="font-weight: 600;" class="rounded-3 text-white">VIEW PROFILE</button>
-                         </div>
-                       </div>
-                     </li>
-
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe915;">
-                      <div class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100">
-                       <div class="activity-item__avatar activity-item__avatar--lg ">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/animal.jpg" alt="">
+                        changed their profile picture
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >7 months ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-item-preview">
+                    <div class="activity-item-preview__cover">
+                      <a href="#">
+                        <img
+                          src="./Images/groups/groups-card-1.jpg"
+                          class="rounded-3"
+                          width="100%"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="activity-item-preview__description w-100 text-center"
+                    >
+                      <div
+                        style="width: 200px; margin-top: -75px"
+                        class="mx-auto"
+                      >
+                        <a href="#" class="border-white border">
+                          <img
+                            src="./Images/groups/groups-card-1-logo.jpg"
+                            width="100%"
+                            style="
+                              border-radius: 500px;
+                              border: 8px solid white;
+                            "
+                            alt=""
+                          />
                         </a>
-                       </div>
+                      </div>
+                      <a href="#" class="text-decoration-none"
+                        ><p style="margin: 5px 0px">Scott Pringston</p></a
+                      >
+                      <button
+                        style="font-weight: 600"
+                        class="rounded-3 text-white"
+                      >
+                        VIEW PROFILE
+                      </button>
+                    </div>
+                  </div>
+                </li>
 
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">themosaurus  <span class="verified-badge text-center"
-                          ><i class="fa-solid fa-check"></i
-                        ></span></a> replied to the topic <a href="#" class="text-decoration-none">bbPress Forum Standard Topic</a> in the forum <a href="#" class="text-decoration-none">bbPress Public Forum</a> </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">3 years ago</a> 
-                        
-                      </div>
-                        
-                      </div>
-                      <div class="activity-inner"><p class="fw-normal">bbPress Forum Closed Topic Second Reply</p></div>
-                     </li>
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe915;">
-                      <div class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100">
-                       <div class="activity-item__avatar activity-item__avatar--lg ">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/animal.jpg" alt="">
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe915;"
+                >
+                  <div
+                    class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100"
+                  >
+                    <div
+                      class="activity-item__avatar activity-item__avatar--lg"
+                    >
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/animal.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none"
+                          >themosaurus
+                          <span class="verified-badge text-center"
+                            ><i class="fa-solid fa-check"></i></span
+                        ></a>
+                        replied to the topic
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Forum Standard Topic</a
+                        >
+                        in the forum
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Public Forum</a
+                        >
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >3 years ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-inner">
+                    <p class="fw-normal">
+                      bbPress Forum Closed Topic Second Reply
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe915;"
+                >
+                  <div
+                    class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100"
+                  >
+                    <div
+                      class="activity-item__avatar activity-item__avatar--lg"
+                    >
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/animal.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none"
+                          >themosaurus
+                          <span class="verified-badge text-center"
+                            ><i class="fa-solid fa-check"></i></span
+                        ></a>
+                        replied to the topic
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Forum Standard Topic</a
+                        >
+                        in the forum
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Public Forum</a
+                        >
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >3 years ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-inner">
+                    <p class="fw-normal">
+                      bbPress Forum Closed Topic Second Reply
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe915;"
+                >
+                  <div
+                    class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100"
+                  >
+                    <div
+                      class="activity-item__avatar activity-item__avatar--lg"
+                    >
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/animal.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none"
+                          >themosaurus
+                          <span class="verified-badge text-center"
+                            ><i class="fa-solid fa-check"></i></span
+                        ></a>
+                        replied to the topic
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Forum Standard Topic</a
+                        >
+                        in the forum
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Public Forum</a
+                        >
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >3 years ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-inner">
+                    <p class="fw-normal">
+                      bbPress Forum Closed Topic Second Reply
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe915;"
+                >
+                  <div
+                    class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100"
+                  >
+                    <div
+                      class="activity-item__avatar activity-item__avatar--lg"
+                    >
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/animal.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none"
+                          >themosaurus
+                          <span class="verified-badge text-center"
+                            ><i class="fa-solid fa-check"></i></span
+                        ></a>
+                        replied to the topic
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Forum Standard Topic</a
+                        >
+                        in the forum
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Public Forum</a
+                        >
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >3 years ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-inner">
+                    <p class="fw-normal">
+                      bbPress Forum Closed Topic Second Reply
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe915;"
+                >
+                  <div
+                    class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100"
+                  >
+                    <div
+                      class="activity-item__avatar activity-item__avatar--lg"
+                    >
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/animal.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none"
+                          >themosaurus
+                          <span class="verified-badge text-center"
+                            ><i class="fa-solid fa-check"></i></span
+                        ></a>
+                        replied to the topic
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Forum Standard Topic</a
+                        >
+                        in the forum
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Public Forum</a
+                        >
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >3 years ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-inner">
+                    <p class="fw-normal">
+                      bbPress Forum Closed Topic Second Reply
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe915;"
+                >
+                  <div
+                    class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100"
+                  >
+                    <div
+                      class="activity-item__avatar activity-item__avatar--lg"
+                    >
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/animal.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none"
+                          >themosaurus
+                          <span class="verified-badge text-center"
+                            ><i class="fa-solid fa-check"></i></span
+                        ></a>
+                        replied to the topic
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Forum Standard Topic</a
+                        >
+                        in the forum
+                        <a href="#" class="text-decoration-none"
+                          >bbPress Public Forum</a
+                        >
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >3 years ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-inner">
+                    <p class="fw-normal">
+                      bbPress Forum Closed Topic Second Reply
+                    </p>
+                  </div>
+                </li>
+
+                <li
+                  class="activity-list__item bg-white rounded-3 position-relative"
+                  data-icon="&#xe928;"
+                >
+                  <div class="activity-item__user pr-md-5 d-flex w-100">
+                    <div class="activity-item__avatar">
+                      <a href="#" class="w-100">
+                        <img
+                          width="100%"
+                          class="rounded-3"
+                          src="./Images/swipe-members/swipe-card-10.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="activity-item__content d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <p class="mb-0">
+                        <a href="#" class="text-decoration-none">Wynnon Judd</a
+                        >'s profile was updated
+                      </p>
+                      <a
+                        href="#"
+                        class="fw-normal text-decoration-none"
+                        style="opacity: 0.6; font-size: 85%"
+                        >5 years ago</a
+                      >
+                    </div>
+                  </div>
+                  <div class="activity-item-preview">
+                    <div class="activity-item-preview__cover">
+                      <a href="#">
+                        <img
+                          src="./Images/bg-flowers.jpg"
+                          class="rounded-3"
+                          width="100%"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="activity-item-preview__description w-100 text-center"
+                    >
+                      <div
+                        style="width: 200px; margin-top: -75px"
+                        class="mx-auto"
+                      >
+                        <a href="#" class="border-white border">
+                          <img
+                            src="./Images/swipe-members/swipe-card-10.jpg"
+                            width="100%"
+                            style="
+                              border-radius: 500px;
+                              border: 8px solid white;
+                            "
+                            alt=""
+                          />
                         </a>
-                       </div>
+                      </div>
+                      <a href="#" class="text-decoration-none"
+                        ><p style="margin: 5px 0px">Wynnon Judd</p></a
+                      >
+                      <a href="#" class="text-decoration-none"
+                        ><p style="margin: 5px 0px" class="fw-normal">
+                          @Wynnon
+                        </p></a
+                      >
+                      <button
+                        style="font-weight: 600"
+                        class="rounded-3 text-white"
+                      >
+                        VIEW PROFILE
+                      </button>
+                    </div>
+                  </div>
+                </li>
 
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">themosaurus  <span class="verified-badge text-center"
-                          ><i class="fa-solid fa-check"></i
-                        ></span></a> replied to the topic <a href="#" class="text-decoration-none">bbPress Forum Standard Topic</a> in the forum <a href="#" class="text-decoration-none">bbPress Public Forum</a> </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">3 years ago</a> 
-                        
-                      </div>
-                        
-                      </div>
-                      <div class="activity-inner"><p class="fw-normal">bbPress Forum Closed Topic Second Reply</p></div>
-                     </li>
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe915;">
-                      <div class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100">
-                       <div class="activity-item__avatar activity-item__avatar--lg ">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/animal.jpg" alt="">
-                        </a>
-                       </div>
-
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">themosaurus  <span class="verified-badge text-center"
-                          ><i class="fa-solid fa-check"></i
-                        ></span></a> replied to the topic <a href="#" class="text-decoration-none">bbPress Forum Standard Topic</a> in the forum <a href="#" class="text-decoration-none">bbPress Public Forum</a> </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">3 years ago</a> 
-                        
-                      </div>
-                        
-                      </div>
-                      <div class="activity-inner"><p class="fw-normal">bbPress Forum Closed Topic Second Reply</p></div>
-                     </li>
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe915;">
-                      <div class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100">
-                       <div class="activity-item__avatar activity-item__avatar--lg ">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/animal.jpg" alt="">
-                        </a>
-                       </div>
-
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">themosaurus  <span class="verified-badge text-center"
-                          ><i class="fa-solid fa-check"></i
-                        ></span></a> replied to the topic <a href="#" class="text-decoration-none">bbPress Forum Standard Topic</a> in the forum <a href="#" class="text-decoration-none">bbPress Public Forum</a> </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">3 years ago</a> 
-                        
-                      </div>
-                        
-                      </div>
-                      <div class="activity-inner"><p class="fw-normal">bbPress Forum Closed Topic Second Reply</p></div>
-                     </li>
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe915;">
-                      <div class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100">
-                       <div class="activity-item__avatar activity-item__avatar--lg ">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/animal.jpg" alt="">
-                        </a>
-                       </div>
-
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">themosaurus  <span class="verified-badge text-center"
-                          ><i class="fa-solid fa-check"></i
-                        ></span></a> replied to the topic <a href="#" class="text-decoration-none">bbPress Forum Standard Topic</a> in the forum <a href="#" class="text-decoration-none">bbPress Public Forum</a> </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">3 years ago</a> 
-                        
-                      </div>
-                        
-                      </div>
-                      <div class="activity-inner"><p class="fw-normal">bbPress Forum Closed Topic Second Reply</p></div>
-                     </li>
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe915;">
-                      <div class="activity-item__user activity-item__user--lg pr-md-5 d-flex w-100">
-                       <div class="activity-item__avatar activity-item__avatar--lg ">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/animal.jpg" alt="">
-                        </a>
-                       </div>
-
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">themosaurus  <span class="verified-badge text-center"
-                          ><i class="fa-solid fa-check"></i
-                        ></span></a> replied to the topic <a href="#" class="text-decoration-none">bbPress Forum Standard Topic</a> in the forum <a href="#" class="text-decoration-none">bbPress Public Forum</a> </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">3 years ago</a> 
-                        
-                      </div>
-                        
-                      </div>
-                      <div class="activity-inner"><p class="fw-normal">bbPress Forum Closed Topic Second Reply</p></div>
-                     </li> 
-
-                     <li class="activity-list__item bg-white rounded-3 position-relative" data-icon="&#xe928;">
-                      <div class="activity-item__user pr-md-5 d-flex  w-100">
-                       <div class="activity-item__avatar">
-                        <a href="#" class="w-100">
-                          <img width="100%" class="rounded-3" src="./Images/swipe-members/swipe-card-10.jpg" alt="">
-                        </a>
-                       </div>
-
-                       <div class="activity-item__content d-flex flex-column align-items-start justify-content-center">
-                        <p class="mb-0"><a href="#" class="text-decoration-none">Wynnon Judd</a>'s profile was updated </p>
-                        <a href="#" class="fw-normal text-decoration-none" style="opacity: .6;font-size: 85%;">5 years ago</a>
-                      </div>
-                     
-                      </div>
-                      <div class="activity-item-preview">
-                        <div class="activity-item-preview__cover">
-                         <a href="#">
-                           <img src="./Images/bg-flowers.jpg" class="rounded-3" width="100%" alt="">
-                         </a>
-                        </div>
-                         <div class="activity-item-preview__description w-100 text-center">
-                              <div style="width: 200px;margin-top: -75px;" class="mx-auto">
-                                   <a href="#" class="border-white border">
-                                     <img src="./Images/swipe-members/swipe-card-10.jpg" width="100%" style="border-radius: 500px;border: 8px solid white;" alt="">
-                                   </a>
-                              </div>
-                              <a href="#" class="text-decoration-none"><p style="margin: 5px 0px;">Wynnon Judd</p></a>
-                              <a href="#" class="text-decoration-none"><p style="margin: 5px 0px;" class="fw-normal">@Wynnon</p></a>
-                              <button style="font-weight: 600;" class="rounded-3 text-white">VIEW PROFILE</button>
-                         </div>
-                       </div>
-                     </li>
-
-                     <li class="my-4">
-                         <button class="activity-load-btn d-block w-100 rounded-3 border-0 bg-white">LOAD MORE</button>
-                     </li>
-                  </ul>
-                </div>
+                <li class="my-4">
+                  <button
+                    class="activity-load-btn d-block w-100 rounded-3 border-0 bg-white"
+                  >
+                    LOAD MORE
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </main>
 
     <div id="profile-bg-banner">

@@ -1,5 +1,5 @@
 $black: #2a2733;
-$rounded-3: .4rem;
+$rounded-3: 0.4rem;
 $danger: #ff6162;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -19,12 +19,12 @@ $danger: #ff6162;
   box-sizing: border-box;
   transition: all 0.3s;
 }
-img{
+img {
   object-fit: cover;
   object-position: center;
 }
-.text-gray-1{
-   color: #888491;
+.text-gray-1 {
+  color: #888491;
 }
 .transition-3 {
   transition: all 0.3s;
@@ -32,19 +32,19 @@ img{
 .transition-2 {
   transition: all 0.2s;
 }
-.montserrat-700{
+.montserrat-700 {
   font-family: "Montserrat";
   font-weight: 700;
 }
-.montserrat-600{
+.montserrat-600 {
   font-family: "Montserrat";
   font-weight: 600;
 }
-.montserrat-600{
+.montserrat-600 {
   font-family: "Montserrat";
   font-weight: 400;
 }
-h3.lead{
+h3.lead {
   margin-top: 2%;
   color: #888491;
   font-size: 1.2rem;
@@ -67,9 +67,9 @@ form label {
   font-weight: 700;
 }
 
-
-// home-1 and home-2 
-.home-2 .container , .home .container {
+// home-1 and home-2
+.home-2 .container,
+.home .container {
   max-width: 1400px;
   width: 100%;
   padding-left: clamp(25px, 3vw, 60px);
@@ -235,10 +235,11 @@ form label {
   #header-bg-image {
     margin-top: 64.36px;
   }
-  h3.lead{
+  h3.lead {
     margin-top: 25px;
   }
-  .home-2 .container , .home .container{
+  .home-2 .container,
+  .home .container {
     max-width: 100%;
   }
   #join-community h2 {
@@ -338,4 +339,34 @@ form label {
   #join-community h2 {
     font-size: 6vw;
   }
+}
+
+// animations --------
+.slide-in-animation {
+  animation: slideIn 1s ease-out;
+  animation-delay: 0.5s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1; 
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in-animation {
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
 }

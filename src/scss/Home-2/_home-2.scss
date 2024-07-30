@@ -61,7 +61,9 @@ main.home-2 {
   font-family: "Montserrat";
   font-weight: 700;
 }
-
+.home-members__header{
+  opacity: 0;
+}
 .home-members__header h3,
 .home-2-social__header h3 {
   margin-top: 2%;
@@ -143,6 +145,7 @@ main.home-2 {
   overflow: hidden;
   position: relative;
   height: 100%;
+  opacity: 0;
 }
 .body-wrapper::before {
   position: absolute;
@@ -305,6 +308,7 @@ main.home-2 {
 }
 .home-2-social__menu li {
   max-width: 25%;
+  opacity: 0;
 }
 .home-2-social__menu .icon-wrapper {
   position: relative;
@@ -372,6 +376,9 @@ main.home-2 {
   }
   .home-2-hero__text {
     margin-top: 25px;
+  }
+  .home-2-social__header{
+    opacity: 0;
   }
   .home-members__header h3,
   .home-members__body,

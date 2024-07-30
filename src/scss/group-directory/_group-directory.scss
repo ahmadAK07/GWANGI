@@ -43,8 +43,8 @@ input.groups-search__text::placeholder {
   cursor: pointer;
 }
 .item:hover {
-    color: white;
-   background: #ff6162;
+  color: white;
+  background: #ff6162;
 }
 .groups-search__submit {
   position: absolute;
@@ -167,6 +167,7 @@ input.groups-search__text::placeholder {
   width: 100%;
   margin-bottom: 16px;
   padding: 0 8px;
+  opacity: 0;
 }
 .groups-card {
   position: relative;

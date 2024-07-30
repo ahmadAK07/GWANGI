@@ -7,14 +7,16 @@ main.home {
   overflow-x: hidden;
 }
 .home-hero__wrapper {
-  padding-top: calc(14% + 3px);
+  padding-top: calc(14% + 3px); 
   background: linear-gradient(
     0deg,
-    rgb(255, 97, 98) 0%,
-    rgba(230, 86, 86, 0) 100%
+    rgb(255, 97, 98) 0%, 
+    rgba(230, 86, 86, 0) 100% 
   );
   background-color: rgba(255, 255, 255, 0);
 }
+
+
 .home-hero .container.container--sm {
   max-width: 800px;
   width: 100%;
@@ -117,6 +119,9 @@ main.home {
   padding-top: 7%;
   padding-bottom: 5%;
 }
+.home-members .home-2-card{
+  opacity: 0;
+}
 .home ins {
   font-weight: 700;
   font-family: "Montserrat";
@@ -141,6 +146,10 @@ main.home {
 
 // end of home-memebrs
 
+.section-2__header{
+  opacity: 0;
+}
+
 .section-2,
 .section-6 ,
 .section-8{
@@ -159,6 +168,9 @@ main.home {
 .section-2__nav {
   padding-bottom: 0.5rem;
   max-width: 450px;
+}
+.section-2__nav li{
+  opacity: 0;
 }
 .section-2__nav a {
   color: #888491;
@@ -180,6 +192,7 @@ main.home {
 }
 .section-2-item {
   overflow: hidden;
+  opacity: 0;
 }
 .section-2 img {
   width: 100%;
@@ -225,6 +238,10 @@ main.home {
   padding: 5% 0% 7.5%;
   background-color: rgb(56, 51, 71);
 }
+.section-3__content, .section-3__content, .section-5__content{
+  transform: translateX(-100%);
+  opacity: 0;
+}
 .section-3__text p {
   font-size: 1.1em;
   font-weight: 400;
@@ -237,11 +254,18 @@ main.home {
   overflow: hidden;
   margin-top: -130px;
 }
-
+.section-3__image img, .section-4__content{
+  transform: translateX(100%);
+  opacity: 0;
+}
+.section-4__image img{
+  transform: translateX(-100%);
+  opacity: 0;
+}
 // section-4
 .section-4 {
   clip-path: polygon(0 calc(0% + 10vw), 100% 0, 100% 100%, 0 calc(100% - 10vw));
-  padding: 12% 0 16%;
+  padding: 14% 0 16%;
   position: relative;
 }
 
@@ -262,7 +286,9 @@ main.home {
   padding-top: 7.5%;
   border-bottom: 20px solid #ff6162;
 }
-
+.section-5 img{
+   transform: translateX(100%);
+}
 // section-6
 .home section{
   // margin-left: -10px;
@@ -283,6 +309,7 @@ main.home {
   padding: 0px 15px 30px;
   max-width: 33.333%;
   width: 100%;
+  opacity: 0;
 }
 .section-6__item.first{
   max-width: 66.666%;
@@ -388,6 +415,7 @@ main.home {
   max-width: 25%;
   width: 100%;
   padding: 0px 15px 30px;
+  opacity: 0;
 }
 .menu-features-homepage__item a{
   padding: 2.2rem 1.5rem 1.5rem;
@@ -460,6 +488,7 @@ main.home {
 
 .section-9{
   padding-top: 5%;
+  // opacity: 0;
 }
 .section-9__body .col-lg-4{
   background-position: center;
